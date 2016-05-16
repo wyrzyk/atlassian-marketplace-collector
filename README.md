@@ -1,0 +1,1 @@
+# atlassian-marketplace-collector
