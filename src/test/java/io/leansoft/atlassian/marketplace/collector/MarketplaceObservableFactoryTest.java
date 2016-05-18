@@ -1,5 +1,6 @@
 package io.leansoft.atlassian.marketplace.collector;
 
+import io.leansoft.atlassian.marketplace.collector.dto.PluginsDto;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.MockitoAnnotations;
@@ -15,8 +16,8 @@ public class MarketplaceObservableFactoryTest {
 
     @Test
     public void testObservableShouldNotReturnErrors() throws Exception {
-        final Observable<String> observable = MarketplaceObservableFactory.getObservable();
-        final TestSubscriber<String> testSubscriber = new TestSubscriber<>();
+        final Observable<PluginsDto> observable = MarketplaceObservableFactory.getObservable();
+        final TestSubscriber<PluginsDto> testSubscriber = new TestSubscriber<>();
         observable.subscribe(testSubscriber);
         testSubscriber.assertNoErrors();
     }
