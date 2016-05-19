@@ -1,11 +1,13 @@
 package io.leansoft.atlassian.marketplace.collector;
 
 import io.leansoft.atlassian.marketplace.collector.dto.PluginsDto;
+import org.springframework.stereotype.Component;
 import rx.Observable;
 
 import javax.xml.ws.http.HTTPException;
 import java.io.IOException;
 
+@Component
 public class MarketplaceObservableFactory {
     private final String MARKETPLACE_LINK_FORMAT = "https://marketplace.atlassian.com/rest/1.0/plugins/search?offset=%d&hidden=none&hosting=any";
 

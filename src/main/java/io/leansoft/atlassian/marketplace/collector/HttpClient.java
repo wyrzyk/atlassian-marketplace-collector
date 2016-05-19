@@ -2,9 +2,11 @@ package io.leansoft.atlassian.marketplace.collector;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
+@Component
 public class HttpClient {
     private final OkHttpClient client = new OkHttpClient();
 
