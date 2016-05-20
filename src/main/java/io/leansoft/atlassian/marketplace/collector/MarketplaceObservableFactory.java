@@ -1,6 +1,6 @@
 package io.leansoft.atlassian.marketplace.collector;
 
-import io.leansoft.atlassian.marketplace.collector.dto.PluginsDto;
+import io.leansoft.atlassian.marketplace.collector.dto.Plugins;
 import org.springframework.stereotype.Component;
 import rx.Observable;
 
@@ -17,14 +17,14 @@ public class MarketplaceObservableFactory {
         this.httpClient = httpClient;
     }
 
-    public Observable<PluginsDto> getObservable() {
+    public Observable<Plugins> getObservable() {
         return Observable.create(subscriber -> {
             try {
 
                 final HttpClient.Response response = httpClient.get(String.format(MARKETPLACE_LINK_FORMAT, 0));
                 if (response.isSuccessful()) {
-                    final PluginsDto pluginsDto = PluginsDto.fromJson(response.getBodyBytes());
-                    subscriber.onNext(pluginsDto);
+                    final Plugins plugins = Plugins.fromJson(response.getBodyBytes());
+                    subscriber.onNext(plugins);
                 } else {
                     subscriber.onError(new HTTPException(response.statusCode()));
                 }
