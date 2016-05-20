@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.leansoft</groupId>
-    <artifactId>atlassian.marketplace.collector</artifactId>
+    <artifactId>atlassian-marketplace-collector</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <licenses>
