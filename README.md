@@ -1,1 +1,1 @@
-# atlassian-marketplace-collector
+# Atlassian Marketplace Collector [![Build Status](https://travis-ci.org/wyrzyk/atlassian-marketplace-collector.svg?branch=master)](https://travis-ci.org/wyrzyk/atlassian-marketplace-collector) [![Coverage Status](https://coveralls.io/repos/github/wyrzyk/atlassian-marketplace-collector/badge.svg?branch=master)](https://coveralls.io/github/wyrzyk/atlassian-marketplace-collector?branch=master)
