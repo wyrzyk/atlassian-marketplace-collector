@@ -1,9 +1,19 @@
 language: java
 sudo: false
 jdk:
-  - oraclejdk8
+- oraclejdk8
 os:
-  - linux
-
-after_success:
-  - mvn clean test jacoco:report coveralls:report
+- linux
+after_deploy:
+- mvn clean test jacoco:report coveralls:report
+script:
+  - mvn install
+deploy:
+  provider: releases
+  api_key:
+    secure: BUnRCtwRvleUtOfHKjAz+bB7HgstoFzB0rwFgsVbfnCTY5MZD/CI0z6O22+OoayEFmg5jdHEia/6NF0K0/ilwQSJ5Z9ZVpDnhwWHMt87xWIm+nTKypoCkrXaiWBhZFAdyVutfgluSBzp8YM79ag9oT+jrr9pPTloO4J2aa07sSRVD0DIrUrQBA8ce72Ekcd50XYu7fVhucikkVqdgEQc5hknqWcyVBXlRLxNe/hcFcZ/J63DIEb4t7IupOVGcr2ia7nbr+7Y5Dwxl96jNmFYijxstfFlXJqSBJLro9I5xpXPitHwKcQk2tNcOpSpUczdK+xXwRko2dkebT804IuzQ656RgtYjYxTs1RafpgpjhrZ3qjQO0Cwm5H8/jqNjgQaQlO36MHbK5gJqPpwGUeGbhgImAGeRyxXju2U6Xz9fK5OrpmR0nl3jM/7jCoCm+X0xBRtsZLbzJbl36k7Yoof1S2c1Q7P7La/gSbcgy4xFKGFUPP8cN1vu8lk+N8WSgOQC02/1oKqiB9f8CN5E6+vA20i0H1bhV0cR/jfkV0Rq8HeqHJHbEbayS/nJQPjr7FrDHdybR5VxKvT+j6DAnsIqP85lfhrNHs5us3YOevDu60bSoJNb4lhuGj40whjGMKhxAZeZkZPWjFEceCzG3MzWXDGehOAsvNSbuKgkBK9G1I=
+  file: "target/*.jar"
+  file_glob: true
+  skip_cleanup: true
+  on:
+    tags: true
