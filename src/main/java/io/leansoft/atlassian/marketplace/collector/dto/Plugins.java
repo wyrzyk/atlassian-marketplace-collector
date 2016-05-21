@@ -36,10 +36,6 @@ public final class Plugins {
         return plugins;
     }
 
-    public static ObjectMapper getMapper() {
-        return mapper;
-    }
-
     public Optional<Link> getNextLink() {
         return links.stream().filter(link -> link.getRel().equals("next") && link.getType().equals("application/json")).reduce(onlyOne());
     }
