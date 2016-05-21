@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
-import static io.leansoft.atlassian.marketplace.collector.Functions.onlyOne;
+import static io.leansoft.atlassian.marketplace.collector.utils.Functions.onlyOne;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public final class Plugins {
@@ -36,15 +36,11 @@ public final class Plugins {
         return plugins;
     }
 
-    public List<Link> getLinks() {
-        return links;
-    }
-
     public static ObjectMapper getMapper() {
         return mapper;
     }
 
     public Optional<Link> getNextLink() {
-        return getLinks().stream().filter(link -> link.getRel().equals("next") && link.getType().equals("application/json")).reduce(onlyOne());
+        return links.stream().filter(link -> link.getRel().equals("next") && link.getType().equals("application/json")).reduce(onlyOne());
     }
 }

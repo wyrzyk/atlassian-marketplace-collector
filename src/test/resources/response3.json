@@ -1,0 +1,63 @@
+{
+  "links": [
+    {
+      "href": "/rest/1.0/plugins/search?offset=1000000&hidden=none&hosting=any",
+      "rel": "self"
+    },
+    {
+      "href": "/search?offset=1000000&hidden=none&hosting=any",
+      "rel": "alternate"
+    },
+    {
+      "href": "/rest/1.0/plugins/search?offset=999990&hidden=none&hosting=any",
+      "rel": "prev",
+      "type": "application/json"
+    },
+    {
+      "href": "/search?offset=999990&hidden=none&hosting=any",
+      "rel": "prev",
+      "type": "text/html"
+    },
+    {
+      "href": "/rest/1.0/plugins/popular?hidden=none&hosting=any",
+      "rel": "popular"
+    },
+    {
+      "href": "/rest/1.0/plugins/trending?hidden=none&hosting=any",
+      "rel": "trending"
+    },
+    {
+      "href": "/rest/1.0/plugins/recent?hidden=none&hosting=any",
+      "rel": "recent"
+    },
+    {
+      "href": "/rest/1.0/plugins/new?hidden=none&hosting=any",
+      "rel": "new"
+    },
+    {
+      "href": "/rest/1.0/plugins/featured?hidden=none&hosting=any",
+      "rel": "featured"
+    },
+    {
+      "href": "/rest/1.0/plugins/highest-rated?hidden=none&hosting=any",
+      "rel": "highest-rated"
+    },
+    {
+      "href": "/rest/1.0/plugins/top-grossing?hidden=none&hosting=any",
+      "rel": "top-grossing"
+    },
+    {
+      "href": "/rest/1.0/plugins/atlassian?hidden=none&hosting=any",
+      "rel": "by-atlassian"
+    },
+    {
+      "href": "/rest/1.0/plugins/codegeist?hidden=none&hosting=any",
+      "rel": "codegeist"
+    },
+    {
+      "href": "/rest/1.0/plugins/banners?hidden=none&hosting=any",
+      "rel": "banners"
+    }
+  ],
+  "plugins": []
+}

@@ -1,4 +1,4 @@
-package io.leansoft.atlassian.marketplace.collector;
+package io.leansoft.atlassian.marketplace.collector.utils;
 
 import java.util.function.BinaryOperator;
 

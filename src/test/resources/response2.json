@@ -1,20 +1,30 @@
 {
   "links": [
     {
-      "href": "/rest/1.0/plugins/search?hidden=none&hosting=any",
+      "href": "/rest/1.0/plugins/search?offset=10&hidden=none&hosting=any",
       "rel": "self"
     },
     {
-      "href": "/search?hidden=none&hosting=any",
+      "href": "/search?offset=10&hidden=none&hosting=any",
       "rel": "alternate"
     },
     {
-      "href": "/next",
+      "href": "/rest/1.0/plugins/search?hidden=none&hosting=any",
+      "rel": "prev",
+      "type": "application/json"
+    },
+    {
+      "href": "/search?hidden=none&hosting=any",
+      "rel": "prev",
+      "type": "text/html"
+    },
+    {
+      "href": "/last",
       "rel": "next",
       "type": "application/json"
     },
     {
-      "href": "/search?offset=10&hidden=none&hosting=any",
+      "href": "/search?offset=20&hidden=none&hosting=any",
       "rel": "next",
       "type": "text/html"
     },
@@ -61,31 +71,31 @@
   ],
   "plugins": [
     {
-      "downloadCount": 158517,
-      "name": "Team Calendars for Confluence",
+      "downloadCount": 44835,
+      "name": "HTML for Confluence",
       "deployment": {
-        "onDemand": true,
+        "onDemand": false,
         "onPremise": true
       },
       "lastModified": {
-        "by": "Matthew Saxby",
-        "date": "2016-02-12T20:26:42.298Z"
+        "by": "Bob Swift [Bob Swift Atlassian Add-ons]",
+        "date": "2016-04-13T12:16:32.873Z"
       },
       "dataCenterCompatible": true,
       "icons": {
         "default": {
           "links": [
             {
-              "href": "/rest/1.0/plugins/com.atlassian.confluence.extra.team-calendars/logo",
+              "href": "/rest/1.0/plugins/org.swift.confluence.html/logo",
               "rel": "self"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/fa0f816d-48f4-4cc8-8fe0-6d07ef5eab1c.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/images/9318084c-32e0-4a3e-a8d2-c57c82f0ebe4.png",
               "rel": "binary",
               "type": "image/png"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/a83bb064-64dc-44a2-b518-8d578d665928.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/images/802749e6-6c0a-49f8-86bf-c45b4952cdfa.png",
               "rel": "high-res",
               "type": "image/png"
             }
@@ -96,16 +106,16 @@
         "tiny": {
           "links": [
             {
-              "href": "/rest/1.0/plugins/com.atlassian.confluence.extra.team-calendars/icon",
+              "href": "/rest/1.0/plugins/org.swift.confluence.html/icon",
               "rel": "self"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/1c40e5fe-0ed2-4265-9302-7008a2bfe334.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/images/b1ba36c4-8c7f-467c-bdfe-2f55a1863600.png",
               "rel": "binary",
               "type": "image/png"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/cbbc7091-b836-41ec-9a93-6a7f80c23b99.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/images/66445f6a-b142-4ac7-9e97-1258b9fa73ba.png",
               "rel": "high-res",
               "type": "image/png"
             }
@@ -114,675 +124,10 @@
           "height": 16
         }
       },
-      "lastReleasedDate": "2016-01-06T00:00:00.000Z",
-      "version": {
-        "supportType": "Atlassian",
-        "releaseDate": "2016-01-06T00:00:00.000Z",
-        "deployment": {
-          "permissions": [],
-          "remote": false,
-          "descriptorType": "xml",
-          "dataCenterCompatible": true
-        },
-        "deployable": true,
-        "marketplaceType": {
-          "type": "Paid via Atlassian",
-          "toolTip": "Evaluate and purchase this add-on through your MyAtlassian account."
-        },
-        "compatibilities": [
-          {
-            "applicationName": "Confluence",
-            "min": {
-              "version": "5.3",
-              "buildNumber": 4527
-            },
-            "max": {
-              "version": "5.9.10",
-              "buildNumber": 6218
-            },
-            "cloud": false
-          }
-        ],
-        "screenshots": [],
-        "license": {
-          "links": [],
-          "id": "commercial",
-          "name": "Commercial"
-        },
-        "version": "5.3.10",
-        "links": [
-          {
-            "href": "https://marketplace.atlassian.com/plugins/com.atlassian.confluence.extra.team-calendars/reviews",
-            "rel": "reviews",
-            "type": "text/html"
-          },
-          {
-            "href": "/rest/1.0/plugins/com.atlassian.confluence.extra.team-calendars/build-number/2250",
-            "rel": "self"
-          },
-          {
-            "href": "/plugins/com.atlassian.confluence.extra.team-calendars/versions#b2250",
-            "rel": "alternate"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/plugins/com.atlassian.confluence.extra.team-calendars/support",
-            "rel": "support"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/plugins/com.atlassian.confluence.extra.team-calendars/versions",
-            "rel": "version-history"
-          },
-          {
-            "href": "http://www.atlassian.com/software/confluence-team-calendars",
-            "rel": "documentation"
-          },
-          {
-            "href": "http://confluence.atlassian.com/display/TEAMCAL",
-            "rel": "license"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/download/plugins/com.atlassian.confluence.extra.team-calendars/version/2250",
-            "rel": "binary"
-          }
-        ],
-        "status": "Public",
-        "releaseNotes": "<p>  <a href=\"https://confluence.atlassian.com/x/kY8_Lw\">Release notes</a> </p>",
-        "marketplaceAgreementAccepted": true,
-        "pluginSystemVersion": "Two",
-        "instructions": [],
-        "autoUpdateAllowed": false,
-        "compatibleApplications": [
-          {
-            "hostingSupport": {
-              "cloud": true,
-              "server": true
-            },
-            "name": "Confluence",
-            "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
-            "pluginCount": 1109,
-            "key": "confluence",
-            "links": [
-              {
-                "href": "/rest/1.0/applications/confluence",
-                "rel": "self"
-              },
-              {
-                "href": "/rest/1.0/applications/confluence/latest",
-                "rel": "latest-version"
-              },
-              {
-                "href": "/plugins/app/confluence",
-                "rel": "alternate"
-              },
-              {
-                "href": "/plugins/app/confluence/featured",
-                "rel": "featured-plugins"
-              },
-              {
-                "href": "/plugins/app/confluence/popular",
-                "rel": "most-popular-plugins"
-              },
-              {
-                "href": "/plugins/app/confluence/featured?hosting=cloud",
-                "rel": "ondemand-plugins"
-              }
-            ],
-            "atlassianConnectSupport": {
-              "cloud": true,
-              "server": false
-            },
-            "order": 3,
-            "status": {
-              "key": "Published",
-              "value": "Published"
-            }
-          }
-        ],
-        "stable": true,
-        "buildNumber": 2250,
-        "summary": "Improvements and bug fixes",
-        "addOnType": "Plugins 2"
-      },
-      "links": [
-        {
-          "href": "/rest/1.0/plugins/com.atlassian.confluence.extra.team-calendars",
-          "rel": "self"
-        },
-        {
-          "href": "/plugins/com.atlassian.confluence.extra.team-calendars/overview",
-          "rel": "alternate"
-        },
-        {
-          "href": "/plugins/com.atlassian.confluence.extra.team-calendars/history",
-          "rel": "history"
-        },
-        {
-          "href": "/rest/1.0/plugins/com.atlassian.confluence.extra.team-calendars/reviews",
-          "rel": "reviews",
-          "type": "application/json"
-        },
-        {
-          "href": "/plugins/com.atlassian.confluence.extra.team-calendars/versions",
-          "rel": "versions"
-        },
-        {
-          "href": "https://marketplace.atlassian.com/plugins/com.atlassian.confluence.extra.team-calendars/reviews",
-          "rel": "reviews",
-          "type": "text/html"
-        }
-      ],
-      "reviewSummary": {
-        "links": [
-          {
-            "href": "/rest/1.0/plugins/com.atlassian.confluence.extra.team-calendars/reviews",
-            "rel": "self"
-          },
-          {
-            "href": "/plugins/com.atlassian.confluence.extra.team-calendars/reviews",
-            "rel": "alternate"
-          }
-        ],
-        "averageStars": 2.6935484409332275,
-        "count": 124
-      },
-      "approval": {
-        "status": "Public"
-      },
-      "pluginKey": "com.atlassian.confluence.extra.team-calendars",
-      "isOldVersion": false,
-      "activeInstalls": {
-        "downloadCount": 158517,
-        "totalInstalls": 12330,
-        "totalUsers": 6361809,
-        "bundled": false,
-        "bundledOnDemand": false
-      },
-      "isNewPlugin": false,
-      "categories": [
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Messaging",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Messaging",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Messaging"
-        }
-      ],
-      "vendor": {
-        "name": "Atlassian",
-        "email": "atlassian-vendor@atlassian.com",
-        "links": [
-          {
-            "href": "/rest/1.0/vendors/85",
-            "rel": "self"
-          },
-          {
-            "href": "/vendors/85",
-            "rel": "alternate"
-          },
-          {
-            "href": "http://www.atlassian.com/",
-            "rel": "homepage"
-          }
-        ],
-        "id": 85,
-        "verified": false
-      },
-      "compatibleApplications": [
-        {
-          "hostingSupport": {
-            "cloud": true,
-            "server": true
-          },
-          "name": "Confluence",
-          "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
-          "pluginCount": 1109,
-          "key": "confluence",
-          "links": [
-            {
-              "href": "/rest/1.0/applications/confluence",
-              "rel": "self"
-            },
-            {
-              "href": "/rest/1.0/applications/confluence/latest",
-              "rel": "latest-version"
-            },
-            {
-              "href": "/plugins/app/confluence",
-              "rel": "alternate"
-            },
-            {
-              "href": "/plugins/app/confluence/featured",
-              "rel": "featured-plugins"
-            },
-            {
-              "href": "/plugins/app/confluence/popular",
-              "rel": "most-popular-plugins"
-            },
-            {
-              "href": "/plugins/app/confluence/featured?hosting=cloud",
-              "rel": "ondemand-plugins"
-            }
-          ],
-          "atlassianConnectSupport": {
-            "cloud": true,
-            "server": false
-          },
-          "order": 3,
-          "status": {
-            "key": "Published",
-            "value": "Published"
-          }
-        }
-      ],
-      "summary": "Your team's single source of truth – managing team leave, tracking JIRA projects, and planning events – Team Calendars for Confluence connects Confluence and JIRA like never before."
-    },
-    {
-      "downloadCount": 116722,
-      "name": "Capture for JIRA",
-      "deployment": {
-        "onDemand": true,
-        "onPremise": true
-      },
-      "lastModified": {
-        "by": "Oswaldo Hernandez [Atlassian] Bugmaster",
-        "date": "2016-03-21T00:11:05.049Z"
-      },
-      "dataCenterCompatible": true,
-      "icons": {
-        "default": {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins/com.atlassian.bonfire.plugin/logo",
-              "rel": "self"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/d5fb126d-42e5-4fc2-8a20-2fa81768ac57.png",
-              "rel": "binary",
-              "type": "image/png"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/02be7238-c009-4a13-b848-d6f2a28a2e0c.png",
-              "rel": "high-res",
-              "type": "image/png"
-            }
-          ],
-          "width": 72,
-          "height": 72
-        },
-        "tiny": {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins/com.atlassian.bonfire.plugin/icon",
-              "rel": "self"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/8a9762a5-2e00-494b-ad56-8e9ab895f27e.png",
-              "rel": "binary",
-              "type": "image/png"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/c9395384-5b1a-4adf-8f8d-5b6706ed1770.png",
-              "rel": "high-res",
-              "type": "image/png"
-            }
-          ],
-          "width": 16,
-          "height": 16
-        }
-      },
-      "lastReleasedDate": "2016-03-14T23:59:07.395Z",
-      "version": {
-        "supportType": "Atlassian",
-        "releaseDate": "2016-03-14T23:59:07.395Z",
-        "deployment": {
-          "permissions": [],
-          "remote": false,
-          "descriptorType": "xml",
-          "dataCenterCompatible": true
-        },
-        "deployable": true,
-        "marketplaceType": {
-          "type": "Paid via Atlassian",
-          "toolTip": "Evaluate and purchase this add-on through your MyAtlassian account."
-        },
-        "compatibilities": [
-          {
-            "applicationName": "JIRA",
-            "min": {
-              "version": "6.0",
-              "buildNumber": 6095
-            },
-            "max": {
-              "version": "7.1.6",
-              "buildNumber": 71010
-            },
-            "cloud": false
-          }
-        ],
-        "screenshots": [],
-        "license": {
-          "links": [
-            {
-              "href": "https://www.atlassian.com/legal/customer-agreement",
-              "rel": "alternate"
-            }
-          ],
-          "id": "atlassian-closed-source",
-          "name": "Atlassian Closed-Source"
-        },
-        "version": "2.9.13",
-        "links": [
-          {
-            "href": "https://marketplace.atlassian.com/plugins/com.atlassian.bonfire.plugin/reviews",
-            "rel": "reviews",
-            "type": "text/html"
-          },
-          {
-            "href": "/rest/1.0/plugins/com.atlassian.bonfire.plugin/build-number/252",
-            "rel": "self"
-          },
-          {
-            "href": "/plugins/com.atlassian.bonfire.plugin/versions#b252",
-            "rel": "alternate"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/plugins/com.atlassian.bonfire.plugin/support",
-            "rel": "support"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/plugins/com.atlassian.bonfire.plugin/versions",
-            "rel": "version-history"
-          },
-          {
-            "href": "https://confluence.atlassian.com/display/CAPTURE/JIRA%20Capture%20Documentation",
-            "rel": "documentation"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/download/plugins/com.atlassian.bonfire.plugin/version/252",
-            "rel": "binary"
-          }
-        ],
-        "status": "Public",
-        "marketplaceAgreementAccepted": true,
-        "pluginSystemVersion": "Two",
-        "instructions": [],
-        "autoUpdateAllowed": false,
-        "compatibleApplications": [
-          {
-            "hostingSupport": {
-              "cloud": true,
-              "server": true
-            },
-            "name": "JIRA",
-            "introduction": "Nice one! Your team went JIRA. You've got a best-in-class issue tracker, but that's only the beginning. The Marketplace is brimming with apps for time-tracking, agile project management, test management, and integration with your other systems. Add-ons are ready to help make JIRA the best project tracker you've ever used.",
-            "pluginCount": 2641,
-            "key": "jira",
-            "links": [
-              {
-                "href": "/rest/1.0/applications/jira",
-                "rel": "self"
-              },
-              {
-                "href": "/rest/1.0/applications/jira/latest",
-                "rel": "latest-version"
-              },
-              {
-                "href": "/plugins/app/jira",
-                "rel": "alternate"
-              },
-              {
-                "href": "/plugins/app/jira/featured",
-                "rel": "featured-plugins"
-              },
-              {
-                "href": "/plugins/app/jira/popular",
-                "rel": "most-popular-plugins"
-              },
-              {
-                "href": "/plugins/app/jira/featured?hosting=cloud",
-                "rel": "ondemand-plugins"
-              }
-            ],
-            "atlassianConnectSupport": {
-              "cloud": true,
-              "server": false
-            },
-            "order": 0,
-            "status": {
-              "key": "Published",
-              "value": "Published"
-            }
-          }
-        ],
-        "stable": true,
-        "buildNumber": 252,
-        "summary": "Minor changes.",
-        "addOnType": "Plugins 2"
-      },
-      "links": [
-        {
-          "href": "/rest/1.0/plugins/com.atlassian.bonfire.plugin",
-          "rel": "self"
-        },
-        {
-          "href": "/plugins/com.atlassian.bonfire.plugin/overview",
-          "rel": "alternate"
-        },
-        {
-          "href": "/plugins/com.atlassian.bonfire.plugin/history",
-          "rel": "history"
-        },
-        {
-          "href": "/rest/1.0/plugins/com.atlassian.bonfire.plugin/reviews",
-          "rel": "reviews",
-          "type": "application/json"
-        },
-        {
-          "href": "/plugins/com.atlassian.bonfire.plugin/versions",
-          "rel": "versions"
-        },
-        {
-          "href": "https://marketplace.atlassian.com/plugins/com.atlassian.bonfire.plugin/reviews",
-          "rel": "reviews",
-          "type": "text/html"
-        }
-      ],
-      "reviewSummary": {
-        "links": [
-          {
-            "href": "/rest/1.0/plugins/com.atlassian.bonfire.plugin/reviews",
-            "rel": "self"
-          },
-          {
-            "href": "/plugins/com.atlassian.bonfire.plugin/reviews",
-            "rel": "alternate"
-          }
-        ],
-        "averageStars": 2.4537036418914795,
-        "count": 108
-      },
-      "approval": {
-        "status": "Public"
-      },
-      "pluginKey": "com.atlassian.bonfire.plugin",
-      "isOldVersion": false,
-      "activeInstalls": {
-        "downloadCount": 116722,
-        "totalInstalls": 6793,
-        "totalUsers": 2219508,
-        "bundled": false,
-        "bundledOnDemand": true
-      },
-      "isNewPlugin": false,
-      "categories": [
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Testing+%26+QA",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Testing+%26+QA",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Testing & QA"
-        },
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Custom+fields",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Custom+fields",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Custom fields"
-        },
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Dashboard+gadgets",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Dashboard+gadgets",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Dashboard gadgets"
-        }
-      ],
-      "vendor": {
-        "name": "Atlassian",
-        "email": "atlassian-vendor@atlassian.com",
-        "links": [
-          {
-            "href": "/rest/1.0/vendors/85",
-            "rel": "self"
-          },
-          {
-            "href": "/vendors/85",
-            "rel": "alternate"
-          },
-          {
-            "href": "http://www.atlassian.com/",
-            "rel": "homepage"
-          }
-        ],
-        "id": 85,
-        "verified": false
-      },
-      "compatibleApplications": [
-        {
-          "hostingSupport": {
-            "cloud": true,
-            "server": true
-          },
-          "name": "JIRA",
-          "introduction": "Nice one! Your team went JIRA. You've got a best-in-class issue tracker, but that's only the beginning. The Marketplace is brimming with apps for time-tracking, agile project management, test management, and integration with your other systems. Add-ons are ready to help make JIRA the best project tracker you've ever used.",
-          "pluginCount": 2641,
-          "key": "jira",
-          "links": [
-            {
-              "href": "/rest/1.0/applications/jira",
-              "rel": "self"
-            },
-            {
-              "href": "/rest/1.0/applications/jira/latest",
-              "rel": "latest-version"
-            },
-            {
-              "href": "/plugins/app/jira",
-              "rel": "alternate"
-            },
-            {
-              "href": "/plugins/app/jira/featured",
-              "rel": "featured-plugins"
-            },
-            {
-              "href": "/plugins/app/jira/popular",
-              "rel": "most-popular-plugins"
-            },
-            {
-              "href": "/plugins/app/jira/featured?hosting=cloud",
-              "rel": "ondemand-plugins"
-            }
-          ],
-          "atlassianConnectSupport": {
-            "cloud": true,
-            "server": false
-          },
-          "order": 0,
-          "status": {
-            "key": "Published",
-            "value": "Published"
-          }
-        }
-      ],
-      "summary": "Capture for JIRA lets you take screenshots and annotate them so you can provide precise visual feedback on everything from websites and UI designs to sales and marketing content."
-    },
-    {
-      "downloadCount": 203232,
-      "name": "Gliffy Diagrams for Confluence",
-      "deployment": {
-        "onDemand": true,
-        "onPremise": true
-      },
-      "lastModified": {
-        "by": "Marketplace Hub [Atlassian]",
-        "date": "2016-05-16T20:18:05.537Z"
-      },
-      "dataCenterCompatible": true,
-      "icons": {
-        "default": {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins/com.gliffy.integration.confluence/logo",
-              "rel": "self"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/com.gliffy.integration.confluence/icons/default/02be7497-e41f-404c-a5bd-97bfa24f942e.png",
-              "rel": "binary",
-              "type": "image/png"
-            }
-          ],
-          "width": 72,
-          "height": 72
-        },
-        "tiny": {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins/com.gliffy.integration.confluence/icon",
-              "rel": "self"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/com.gliffy.integration.confluence/icons/default/02be7497-e41f-404c-a5bd-97bfa24f942e_scaled.png",
-              "rel": "binary",
-              "type": "image/png"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/com.gliffy.integration.confluence/icons/default/02be7497-e41f-404c-a5bd-97bfa24f942e_high.png",
-              "rel": "high-res",
-              "type": "image/png"
-            }
-          ],
-          "width": 16,
-          "height": 16
-        }
-      },
-      "lastReleasedDate": "2016-05-13T23:00:38.594Z",
+      "lastReleasedDate": "2016-04-08T02:10:58.047Z",
       "version": {
         "supportType": "Vendor",
-        "releaseDate": "2016-05-13T23:00:38.594Z",
+        "releaseDate": "2016-04-08T02:10:58.047Z",
         "deployment": {
           "permissions": [],
           "remote": false,
@@ -802,8 +147,8 @@
               "buildNumber": 5501
             },
             "max": {
-              "version": "5.9.10",
-              "buildNumber": 6218
+              "version": "5.9.11",
+              "buildNumber": 6219
             },
             "cloud": false
           }
@@ -814,1028 +159,27 @@
           "id": "commercial",
           "name": "Commercial"
         },
-        "version": "6.9.1",
+        "version": "5.1.0",
         "links": [
           {
-            "href": "https://marketplace.atlassian.com/plugins/com.gliffy.integration.confluence/reviews",
+            "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.html/reviews",
             "rel": "reviews",
             "type": "text/html"
           },
           {
-            "href": "/rest/1.0/plugins/com.gliffy.integration.confluence/build-number/1002010",
+            "href": "/rest/1.0/plugins/org.swift.confluence.html/build-number/510",
             "rel": "self"
           },
           {
-            "href": "/plugins/com.gliffy.integration.confluence/versions#b1002010",
+            "href": "/plugins/org.swift.confluence.html/versions#b510",
             "rel": "alternate"
           },
           {
-            "href": "https://marketplace.atlassian.com/plugins/com.gliffy.integration.confluence/support",
+            "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.html/support",
             "rel": "support"
           },
           {
-            "href": "https://marketplace.atlassian.com/plugins/com.gliffy.integration.confluence/versions",
-            "rel": "version-history"
-          },
-          {
-            "href": "http://www.gliffy.com/legal/Gliffy_EULA.pdf",
-            "rel": "eula"
-          },
-          {
-            "href": "http://www.gliffy.com/confluence-plugin/?utm_source=PAC&amp=&utm_medium=External%2BLinks&amp=&utm_content=Learn%2Bmore%2BURL&amp=&utm_campaign=Gliffy%2BConfluence%2BPlugin",
-            "rel": "documentation"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/download/plugins/com.gliffy.integration.confluence/version/1002010",
-            "rel": "binary"
-          }
-        ],
-        "status": "Public",
-        "releaseNotes": "<p>  This release contains bug fixes for: </p> <ul>  <li>Diagram preview image in macro placeholder (when editing a Confluence page)  <li>Analytics / feedback </ul>",
-        "marketplaceAgreementAccepted": true,
-        "pluginSystemVersion": "Two",
-        "instructions": [],
-        "autoUpdateAllowed": false,
-        "compatibleApplications": [
-          {
-            "hostingSupport": {
-              "cloud": true,
-              "server": true
-            },
-            "name": "Confluence",
-            "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
-            "pluginCount": 1109,
-            "key": "confluence",
-            "links": [
-              {
-                "href": "/rest/1.0/applications/confluence",
-                "rel": "self"
-              },
-              {
-                "href": "/rest/1.0/applications/confluence/latest",
-                "rel": "latest-version"
-              },
-              {
-                "href": "/plugins/app/confluence",
-                "rel": "alternate"
-              },
-              {
-                "href": "/plugins/app/confluence/featured",
-                "rel": "featured-plugins"
-              },
-              {
-                "href": "/plugins/app/confluence/popular",
-                "rel": "most-popular-plugins"
-              },
-              {
-                "href": "/plugins/app/confluence/featured?hosting=cloud",
-                "rel": "ondemand-plugins"
-              }
-            ],
-            "atlassianConnectSupport": {
-              "cloud": true,
-              "server": false
-            },
-            "order": 3,
-            "status": {
-              "key": "Published",
-              "value": "Published"
-            }
-          }
-        ],
-        "stable": true,
-        "buildNumber": 1002010,
-        "summary": "Bug Fixes",
-        "addOnType": "Plugins 2"
-      },
-      "links": [
-        {
-          "href": "/rest/1.0/plugins/com.gliffy.integration.confluence",
-          "rel": "self"
-        },
-        {
-          "href": "/plugins/com.gliffy.integration.confluence/overview",
-          "rel": "alternate"
-        },
-        {
-          "href": "/plugins/com.gliffy.integration.confluence/history",
-          "rel": "history"
-        },
-        {
-          "href": "/rest/1.0/plugins/com.gliffy.integration.confluence/reviews",
-          "rel": "reviews",
-          "type": "application/json"
-        },
-        {
-          "href": "/plugins/com.gliffy.integration.confluence/versions",
-          "rel": "versions"
-        },
-        {
-          "href": "https://marketplace.atlassian.com/plugins/com.gliffy.integration.confluence/reviews",
-          "rel": "reviews",
-          "type": "text/html"
-        }
-      ],
-      "reviewSummary": {
-        "links": [
-          {
-            "href": "/rest/1.0/plugins/com.gliffy.integration.confluence/reviews",
-            "rel": "self"
-          },
-          {
-            "href": "/plugins/com.gliffy.integration.confluence/reviews",
-            "rel": "alternate"
-          }
-        ],
-        "averageStars": 3.520958185195923,
-        "count": 167
-      },
-      "approval": {
-        "status": "Public"
-      },
-      "pluginKey": "com.gliffy.integration.confluence",
-      "isOldVersion": false,
-      "activeInstalls": {
-        "downloadCount": 203232,
-        "totalInstalls": 11072,
-        "totalUsers": 6857062,
-        "bundled": false,
-        "bundledOnDemand": true
-      },
-      "isNewPlugin": false,
-      "categories": [
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Diagramming",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Diagramming",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Diagramming"
-        },
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Blueprints",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Blueprints",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Blueprints"
-        },
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Macros",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Macros",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Macros"
-        }
-      ],
-      "vendor": {
-        "name": "Gliffy",
-        "email": "support@gliffy.com",
-        "links": [
-          {
-            "href": "/rest/1.0/vendors/99",
-            "rel": "self"
-          },
-          {
-            "href": "/vendors/99",
-            "rel": "alternate"
-          },
-          {
-            "href": "http://www.gliffy.com/",
-            "rel": "homepage"
-          }
-        ],
-        "id": 99,
-        "verified": true
-      },
-      "compatibleApplications": [
-        {
-          "hostingSupport": {
-            "cloud": true,
-            "server": true
-          },
-          "name": "Confluence",
-          "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
-          "pluginCount": 1109,
-          "key": "confluence",
-          "links": [
-            {
-              "href": "/rest/1.0/applications/confluence",
-              "rel": "self"
-            },
-            {
-              "href": "/rest/1.0/applications/confluence/latest",
-              "rel": "latest-version"
-            },
-            {
-              "href": "/plugins/app/confluence",
-              "rel": "alternate"
-            },
-            {
-              "href": "/plugins/app/confluence/featured",
-              "rel": "featured-plugins"
-            },
-            {
-              "href": "/plugins/app/confluence/popular",
-              "rel": "most-popular-plugins"
-            },
-            {
-              "href": "/plugins/app/confluence/featured?hosting=cloud",
-              "rel": "ondemand-plugins"
-            }
-          ],
-          "atlassianConnectSupport": {
-            "cloud": true,
-            "server": false
-          },
-          "order": 3,
-          "status": {
-            "key": "Published",
-            "value": "Published"
-          }
-        }
-      ],
-      "summary": "Gliffy is an easy-to-use diagramming tool for Confluence, and is the most popular diagramming plugin in the Atlassian ecosystem. Use Gliffy to add a visual dimension to your wiki, and improve your team's communication and collaboration capabilities."
-    },
-    {
-      "downloadCount": 35666,
-      "name": "Questions for Confluence",
-      "deployment": {
-        "onDemand": true,
-        "onPremise": true
-      },
-      "lastModified": {
-        "by": "Matthew Saxby",
-        "date": "2016-02-12T20:27:14.038Z"
-      },
-      "dataCenterCompatible": true,
-      "icons": {
-        "default": {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins/com.atlassian.confluence.plugins.confluence-questions/logo",
-              "rel": "self"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/c50f1401-6501-4cea-a844-d67c71d1ef37.png",
-              "rel": "binary",
-              "type": "image/png"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/bc4c8c10-9a66-4014-8454-e61494821cad.png",
-              "rel": "high-res",
-              "type": "image/png"
-            }
-          ],
-          "width": 72,
-          "height": 72
-        },
-        "tiny": {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins/com.atlassian.confluence.plugins.confluence-questions/icon",
-              "rel": "self"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/2e77ff4e-ac01-4c8b-9cfa-01e40905542b.png",
-              "rel": "binary",
-              "type": "image/png"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/47687906-c8be-426f-ae5a-8626c39e5399.png",
-              "rel": "high-res",
-              "type": "image/png"
-            }
-          ],
-          "width": 16,
-          "height": 16
-        }
-      },
-      "lastReleasedDate": "2016-01-31T16:31:35.262Z",
-      "version": {
-        "supportType": "Atlassian",
-        "releaseDate": "2016-01-31T16:31:35.262Z",
-        "deployment": {
-          "permissions": [],
-          "remote": false,
-          "descriptorType": "xml",
-          "dataCenterCompatible": true
-        },
-        "deployable": true,
-        "marketplaceType": {
-          "type": "Paid via Atlassian",
-          "toolTip": "Evaluate and purchase this add-on through your MyAtlassian account."
-        },
-        "compatibilities": [
-          {
-            "applicationName": "Confluence",
-            "min": {
-              "version": "5.7",
-              "buildNumber": 5780
-            },
-            "max": {
-              "version": "5.9.10",
-              "buildNumber": 6218
-            },
-            "cloud": false
-          }
-        ],
-        "screenshots": [],
-        "license": {
-          "links": [
-            {
-              "href": "https://www.atlassian.com/legal/customer-agreement",
-              "rel": "alternate"
-            }
-          ],
-          "id": "atlassian-closed-source",
-          "name": "Atlassian Closed-Source"
-        },
-        "version": "2.4.11",
-        "links": [
-          {
-            "href": "https://marketplace.atlassian.com/plugins/com.atlassian.confluence.plugins.confluence-questions/reviews",
-            "rel": "reviews",
-            "type": "text/html"
-          },
-          {
-            "href": "/rest/1.0/plugins/com.atlassian.confluence.plugins.confluence-questions/build-number/1020040011",
-            "rel": "self"
-          },
-          {
-            "href": "/plugins/com.atlassian.confluence.plugins.confluence-questions/versions#b1020040011",
-            "rel": "alternate"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/plugins/com.atlassian.confluence.plugins.confluence-questions/support",
-            "rel": "support"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/plugins/com.atlassian.confluence.plugins.confluence-questions/versions",
-            "rel": "version-history"
-          },
-          {
-            "href": "https://www.atlassian.com/end-user-agreement/",
-            "rel": "eula"
-          },
-          {
-            "href": "https://confluence.atlassian.com/display/QUESTIONS/Confluence%20Questions%20Home",
-            "rel": "documentation"
-          },
-          {
-            "href": "https://www.atlassian.com/end-user-agreement/",
-            "rel": "license"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/download/plugins/com.atlassian.confluence.plugins.confluence-questions/version/1020040011",
-            "rel": "binary"
-          }
-        ],
-        "status": "Public",
-        "releaseNotes": "<p>   <a href=\"https://jira.atlassian.com/secure/ReleaseNote.jspa?projectId=15310&version=60555\">Release Notes</a> </p>",
-        "marketplaceAgreementAccepted": true,
-        "pluginSystemVersion": "Two",
-        "instructions": [],
-        "autoUpdateAllowed": false,
-        "compatibleApplications": [
-          {
-            "hostingSupport": {
-              "cloud": true,
-              "server": true
-            },
-            "name": "Confluence",
-            "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
-            "pluginCount": 1109,
-            "key": "confluence",
-            "links": [
-              {
-                "href": "/rest/1.0/applications/confluence",
-                "rel": "self"
-              },
-              {
-                "href": "/rest/1.0/applications/confluence/latest",
-                "rel": "latest-version"
-              },
-              {
-                "href": "/plugins/app/confluence",
-                "rel": "alternate"
-              },
-              {
-                "href": "/plugins/app/confluence/featured",
-                "rel": "featured-plugins"
-              },
-              {
-                "href": "/plugins/app/confluence/popular",
-                "rel": "most-popular-plugins"
-              },
-              {
-                "href": "/plugins/app/confluence/featured?hosting=cloud",
-                "rel": "ondemand-plugins"
-              }
-            ],
-            "atlassianConnectSupport": {
-              "cloud": true,
-              "server": false
-            },
-            "order": 3,
-            "status": {
-              "key": "Published",
-              "value": "Published"
-            }
-          }
-        ],
-        "stable": true,
-        "buildNumber": 1020040011,
-        "summary": "Bug fix release for email notifications",
-        "addOnType": "Plugins 2"
-      },
-      "links": [
-        {
-          "href": "/rest/1.0/plugins/com.atlassian.confluence.plugins.confluence-questions",
-          "rel": "self"
-        },
-        {
-          "href": "/plugins/com.atlassian.confluence.plugins.confluence-questions/overview",
-          "rel": "alternate"
-        },
-        {
-          "href": "/plugins/com.atlassian.confluence.plugins.confluence-questions/history",
-          "rel": "history"
-        },
-        {
-          "href": "/rest/1.0/plugins/com.atlassian.confluence.plugins.confluence-questions/reviews",
-          "rel": "reviews",
-          "type": "application/json"
-        },
-        {
-          "href": "/plugins/com.atlassian.confluence.plugins.confluence-questions/versions",
-          "rel": "versions"
-        },
-        {
-          "href": "https://marketplace.atlassian.com/plugins/com.atlassian.confluence.plugins.confluence-questions/reviews",
-          "rel": "reviews",
-          "type": "text/html"
-        },
-        {
-          "href": "https://confluence.atlassian.com/download/attachments/407724483/Atlassian%20Beta%20Testing%20Terms%202013%2009%2025.doc.pdf?api=v2",
-          "rel": "privacy"
-        }
-      ],
-      "reviewSummary": {
-        "links": [
-          {
-            "href": "/rest/1.0/plugins/com.atlassian.confluence.plugins.confluence-questions/reviews",
-            "rel": "self"
-          },
-          {
-            "href": "/plugins/com.atlassian.confluence.plugins.confluence-questions/reviews",
-            "rel": "alternate"
-          }
-        ],
-        "averageStars": 2.8684210777282715,
-        "count": 38
-      },
-      "approval": {
-        "status": "Public"
-      },
-      "pluginKey": "com.atlassian.confluence.plugins.confluence-questions",
-      "isOldVersion": false,
-      "activeInstalls": {
-        "downloadCount": 35666,
-        "totalInstalls": 4646,
-        "totalUsers": 1870007,
-        "bundled": false,
-        "bundledOnDemand": true
-      },
-      "isNewPlugin": false,
-      "categories": [
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Messaging",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Messaging",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Messaging"
-        }
-      ],
-      "vendor": {
-        "name": "Atlassian",
-        "email": "atlassian-vendor@atlassian.com",
-        "links": [
-          {
-            "href": "/rest/1.0/vendors/85",
-            "rel": "self"
-          },
-          {
-            "href": "/vendors/85",
-            "rel": "alternate"
-          },
-          {
-            "href": "http://www.atlassian.com/",
-            "rel": "homepage"
-          }
-        ],
-        "id": 85,
-        "verified": false
-      },
-      "compatibleApplications": [
-        {
-          "hostingSupport": {
-            "cloud": true,
-            "server": true
-          },
-          "name": "Confluence",
-          "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
-          "pluginCount": 1109,
-          "key": "confluence",
-          "links": [
-            {
-              "href": "/rest/1.0/applications/confluence",
-              "rel": "self"
-            },
-            {
-              "href": "/rest/1.0/applications/confluence/latest",
-              "rel": "latest-version"
-            },
-            {
-              "href": "/plugins/app/confluence",
-              "rel": "alternate"
-            },
-            {
-              "href": "/plugins/app/confluence/featured",
-              "rel": "featured-plugins"
-            },
-            {
-              "href": "/plugins/app/confluence/popular",
-              "rel": "most-popular-plugins"
-            },
-            {
-              "href": "/plugins/app/confluence/featured?hosting=cloud",
-              "rel": "ondemand-plugins"
-            }
-          ],
-          "atlassianConnectSupport": {
-            "cloud": true,
-            "server": false
-          },
-          "order": 3,
-          "status": {
-            "key": "Published",
-            "value": "Published"
-          }
-        }
-      ],
-      "summary": "It's harder than it should be to get answers to your questions at work. Give people a way to ask questions within their teams and share tribal knowledge with anyone in your entire organization with a modern replacement for forums, Q&A."
-    },
-    {
-      "downloadCount": 47534,
-      "name": "Portfolio for JIRA",
-      "deployment": {
-        "onDemand": true,
-        "onPremise": true
-      },
-      "lastModified": {
-        "by": "James Russell [Atlassian]",
-        "date": "2016-05-03T00:56:56.313Z"
-      },
-      "dataCenterCompatible": true,
-      "icons": {
-        "default": {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins/com.radiantminds.roadmaps-jira/logo",
-              "rel": "self"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/8734322e-9602-4802-9c78-70e08ffc1dc8.png",
-              "rel": "binary",
-              "type": "image/png"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/1fb6c1c4-d9eb-4677-82bb-d1a649eb662b.png",
-              "rel": "high-res",
-              "type": "image/png"
-            }
-          ],
-          "width": 72,
-          "height": 72
-        },
-        "tiny": {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins/com.radiantminds.roadmaps-jira/icon",
-              "rel": "self"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/d21dfe29-3630-47db-8e66-89f002f1dd57.png",
-              "rel": "binary",
-              "type": "image/png"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/72c4db79-dc17-4701-b1e8-3701056e84cd.png",
-              "rel": "high-res",
-              "type": "image/png"
-            }
-          ],
-          "width": 16,
-          "height": 16
-        }
-      },
-      "lastReleasedDate": "2016-04-11T00:00:00.000Z",
-      "version": {
-        "supportType": "Atlassian",
-        "releaseDate": "2016-04-11T00:00:00.000Z",
-        "deployment": {
-          "permissions": [],
-          "remote": false,
-          "descriptorType": "xml",
-          "dataCenterCompatible": true
-        },
-        "deployable": true,
-        "marketplaceType": {
-          "type": "Paid via Atlassian",
-          "toolTip": "Evaluate and purchase this add-on through your MyAtlassian account."
-        },
-        "compatibilities": [
-          {
-            "applicationName": "JIRA",
-            "min": {
-              "version": "6.3",
-              "buildNumber": 6328
-            },
-            "max": {
-              "version": "7.1.6",
-              "buildNumber": 71010
-            },
-            "cloud": false
-          }
-        ],
-        "screenshots": [],
-        "license": {
-          "links": [],
-          "id": "commercial",
-          "name": "Commercial"
-        },
-        "version": "1.12.4",
-        "links": [
-          {
-            "href": "https://marketplace.atlassian.com/plugins/com.radiantminds.roadmaps-jira/reviews",
-            "rel": "reviews",
-            "type": "text/html"
-          },
-          {
-            "href": "/rest/1.0/plugins/com.radiantminds.roadmaps-jira/build-number/11240",
-            "rel": "self"
-          },
-          {
-            "href": "/plugins/com.radiantminds.roadmaps-jira/versions#b11240",
-            "rel": "alternate"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/plugins/com.radiantminds.roadmaps-jira/support",
-            "rel": "support"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/plugins/com.radiantminds.roadmaps-jira/versions",
-            "rel": "version-history"
-          },
-          {
-            "href": "https://confluence.atlassian.com/display/JIRAPortfolio/Portfolio%20for%20JIRA%20Documentation",
-            "rel": "documentation"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/download/plugins/com.radiantminds.roadmaps-jira/version/11240",
-            "rel": "binary"
-          }
-        ],
-        "status": "Public",
-        "releaseNotes": "<p>    See <a href=\"https://confluence.atlassian.com/display/JIRAPortfolio/Portfolio+for+JIRA+1.12+Release+Notes\">release notes</a> for details. </p>",
-        "marketplaceAgreementAccepted": true,
-        "pluginSystemVersion": "Two",
-        "instructions": [],
-        "autoUpdateAllowed": false,
-        "compatibleApplications": [
-          {
-            "hostingSupport": {
-              "cloud": true,
-              "server": true
-            },
-            "name": "JIRA",
-            "introduction": "Nice one! Your team went JIRA. You've got a best-in-class issue tracker, but that's only the beginning. The Marketplace is brimming with apps for time-tracking, agile project management, test management, and integration with your other systems. Add-ons are ready to help make JIRA the best project tracker you've ever used.",
-            "pluginCount": 2641,
-            "key": "jira",
-            "links": [
-              {
-                "href": "/rest/1.0/applications/jira",
-                "rel": "self"
-              },
-              {
-                "href": "/rest/1.0/applications/jira/latest",
-                "rel": "latest-version"
-              },
-              {
-                "href": "/plugins/app/jira",
-                "rel": "alternate"
-              },
-              {
-                "href": "/plugins/app/jira/featured",
-                "rel": "featured-plugins"
-              },
-              {
-                "href": "/plugins/app/jira/popular",
-                "rel": "most-popular-plugins"
-              },
-              {
-                "href": "/plugins/app/jira/featured?hosting=cloud",
-                "rel": "ondemand-plugins"
-              }
-            ],
-            "atlassianConnectSupport": {
-              "cloud": true,
-              "server": false
-            },
-            "order": 0,
-            "status": {
-              "key": "Published",
-              "value": "Published"
-            }
-          }
-        ],
-        "stable": true,
-        "buildNumber": 11240,
-        "summary": "Reporting for live plans",
-        "addOnType": "Plugins 2"
-      },
-      "links": [
-        {
-          "href": "/rest/1.0/plugins/com.radiantminds.roadmaps-jira",
-          "rel": "self"
-        },
-        {
-          "href": "/plugins/com.radiantminds.roadmaps-jira/overview",
-          "rel": "alternate"
-        },
-        {
-          "href": "/plugins/com.radiantminds.roadmaps-jira/history",
-          "rel": "history"
-        },
-        {
-          "href": "/rest/1.0/plugins/com.radiantminds.roadmaps-jira/reviews",
-          "rel": "reviews",
-          "type": "application/json"
-        },
-        {
-          "href": "/plugins/com.radiantminds.roadmaps-jira/versions",
-          "rel": "versions"
-        },
-        {
-          "href": "https://marketplace.atlassian.com/plugins/com.radiantminds.roadmaps-jira/reviews",
-          "rel": "reviews",
-          "type": "text/html"
-        }
-      ],
-      "reviewSummary": {
-        "links": [
-          {
-            "href": "/rest/1.0/plugins/com.radiantminds.roadmaps-jira/reviews",
-            "rel": "self"
-          },
-          {
-            "href": "/plugins/com.radiantminds.roadmaps-jira/reviews",
-            "rel": "alternate"
-          }
-        ],
-        "averageStars": 2.5180723667144775,
-        "count": 83
-      },
-      "approval": {
-        "status": "Public"
-      },
-      "pluginKey": "com.radiantminds.roadmaps-jira",
-      "isOldVersion": false,
-      "activeInstalls": {
-        "downloadCount": 47534,
-        "totalInstalls": 5387,
-        "totalUsers": 2015900,
-        "bundled": false,
-        "bundledOnDemand": false
-      },
-      "isNewPlugin": false,
-      "categories": [
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Project+management",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Project+management",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Project management"
-        }
-      ],
-      "vendor": {
-        "name": "Atlassian",
-        "email": "atlassian-vendor@atlassian.com",
-        "links": [
-          {
-            "href": "/rest/1.0/vendors/85",
-            "rel": "self"
-          },
-          {
-            "href": "/vendors/85",
-            "rel": "alternate"
-          },
-          {
-            "href": "http://www.atlassian.com/",
-            "rel": "homepage"
-          }
-        ],
-        "id": 85,
-        "verified": false
-      },
-      "compatibleApplications": [
-        {
-          "hostingSupport": {
-            "cloud": true,
-            "server": true
-          },
-          "name": "JIRA",
-          "introduction": "Nice one! Your team went JIRA. You've got a best-in-class issue tracker, but that's only the beginning. The Marketplace is brimming with apps for time-tracking, agile project management, test management, and integration with your other systems. Add-ons are ready to help make JIRA the best project tracker you've ever used.",
-          "pluginCount": 2641,
-          "key": "jira",
-          "links": [
-            {
-              "href": "/rest/1.0/applications/jira",
-              "rel": "self"
-            },
-            {
-              "href": "/rest/1.0/applications/jira/latest",
-              "rel": "latest-version"
-            },
-            {
-              "href": "/plugins/app/jira",
-              "rel": "alternate"
-            },
-            {
-              "href": "/plugins/app/jira/featured",
-              "rel": "featured-plugins"
-            },
-            {
-              "href": "/plugins/app/jira/popular",
-              "rel": "most-popular-plugins"
-            },
-            {
-              "href": "/plugins/app/jira/featured?hosting=cloud",
-              "rel": "ondemand-plugins"
-            }
-          ],
-          "atlassianConnectSupport": {
-            "cloud": true,
-            "server": false
-          },
-          "order": 0,
-          "status": {
-            "key": "Published",
-            "value": "Published"
-          }
-        }
-      ],
-      "summary": "Connect strategic goals to development realities with a single view of business initiatives linked to engineering work across teams and projects. Automatic scheduling, capacity planning, and the power to easily react to change in real time."
-    },
-    {
-      "downloadCount": 102784,
-      "name": "Advanced Tables for Confluence",
-      "deployment": {
-        "onDemand": true,
-        "onPremise": true
-      },
-      "lastModified": {
-        "by": "Bob Swift [Bob Swift Atlassian Add-ons]",
-        "date": "2016-05-16T14:55:31.733Z"
-      },
-      "dataCenterCompatible": true,
-      "icons": {
-        "default": {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins/org.swift.confluence.table/logo",
-              "rel": "self"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/40223876-10af-4558-a486-e5b55d5141dd.png",
-              "rel": "binary",
-              "type": "image/png"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/2ee78430-a8ef-4085-b827-ffe7f42cbb2f.png",
-              "rel": "high-res",
-              "type": "image/png"
-            }
-          ],
-          "width": 72,
-          "height": 72
-        },
-        "tiny": {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins/org.swift.confluence.table/icon",
-              "rel": "self"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/8df1e36f-543f-466e-95e7-b2028eec99f7.png",
-              "rel": "binary",
-              "type": "image/png"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/eb38404f-2369-44a0-b201-cc6cc10aeb75.png",
-              "rel": "high-res",
-              "type": "image/png"
-            }
-          ],
-          "width": 16,
-          "height": 16
-        }
-      },
-      "lastReleasedDate": "2016-05-12T14:52:00.784Z",
-      "version": {
-        "supportType": "Vendor",
-        "releaseDate": "2016-05-12T14:52:00.784Z",
-        "deployment": {
-          "permissions": [],
-          "remote": false,
-          "descriptorType": "xml",
-          "dataCenterCompatible": true
-        },
-        "deployable": true,
-        "marketplaceType": {
-          "type": "Paid via Atlassian",
-          "toolTip": "Evaluate and purchase this add-on through your MyAtlassian account."
-        },
-        "compatibilities": [
-          {
-            "applicationName": "Confluence",
-            "min": {
-              "version": "5.7",
-              "buildNumber": 5780
-            },
-            "max": {
-              "version": "5.9.10",
-              "buildNumber": 6218
-            },
-            "cloud": false
-          }
-        ],
-        "screenshots": [],
-        "license": {
-          "links": [],
-          "id": "commercial",
-          "name": "Commercial"
-        },
-        "version": "7.1.0",
-        "links": [
-          {
-            "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.table/reviews",
-            "rel": "reviews",
-            "type": "text/html"
-          },
-          {
-            "href": "/rest/1.0/plugins/org.swift.confluence.table/build-number/710",
-            "rel": "self"
-          },
-          {
-            "href": "/plugins/org.swift.confluence.table/versions#b710",
-            "rel": "alternate"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.table/support",
-            "rel": "support"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.table/versions",
+            "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.html/versions",
             "rel": "version-history"
           },
           {
@@ -1843,16 +187,16 @@
             "rel": "eula"
           },
           {
-            "href": "https://bobswift.atlassian.net/wiki/display/TBL",
+            "href": "https://bobswift.atlassian.net/wiki/display/HTML",
             "rel": "documentation"
           },
           {
-            "href": "https://marketplace.atlassian.com/download/plugins/org.swift.confluence.table/version/710",
+            "href": "https://marketplace.atlassian.com/download/plugins/org.swift.confluence.html/version/510",
             "rel": "binary"
           }
         ],
         "status": "Public",
-        "releaseNotes": "<p>  <a href=\"https://bobswift.atlassian.net/wiki/display/TBL/Release+Notes+7.1?src=sidebar\" style=\"\">Release Notes 7.1</a> </p>",
+        "releaseNotes": "<p>  <a href=\"https://bobswift.atlassian.net/wiki/display/HTML/Release+Notes+5.1?src=sidebar\" style=\"\">Release Notes 5.1</a> </p>",
         "marketplaceAgreementAccepted": true,
         "pluginSystemVersion": "Two",
         "instructions": [],
@@ -1865,7 +209,7 @@
             },
             "name": "Confluence",
             "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
-            "pluginCount": 1109,
+            "pluginCount": 1102,
             "key": "confluence",
             "links": [
               {
@@ -1905,34 +249,34 @@
           }
         ],
         "stable": true,
-        "buildNumber": 710,
-        "summary": "Fixes",
+        "buildNumber": 510,
+        "summary": "XSLT security improvement",
         "addOnType": "Plugins 2"
       },
       "links": [
         {
-          "href": "/rest/1.0/plugins/org.swift.confluence.table",
+          "href": "/rest/1.0/plugins/org.swift.confluence.html",
           "rel": "self"
         },
         {
-          "href": "/plugins/org.swift.confluence.table/overview",
+          "href": "/plugins/org.swift.confluence.html/overview",
           "rel": "alternate"
         },
         {
-          "href": "/plugins/org.swift.confluence.table/history",
+          "href": "/plugins/org.swift.confluence.html/history",
           "rel": "history"
         },
         {
-          "href": "/rest/1.0/plugins/org.swift.confluence.table/reviews",
+          "href": "/rest/1.0/plugins/org.swift.confluence.html/reviews",
           "rel": "reviews",
           "type": "application/json"
         },
         {
-          "href": "/plugins/org.swift.confluence.table/versions",
+          "href": "/plugins/org.swift.confluence.html/versions",
           "rel": "versions"
         },
         {
-          "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.table/reviews",
+          "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.html/reviews",
           "rel": "reviews",
           "type": "text/html"
         },
@@ -1944,43 +288,43 @@
       "reviewSummary": {
         "links": [
           {
-            "href": "/rest/1.0/plugins/org.swift.confluence.table/reviews",
+            "href": "/rest/1.0/plugins/org.swift.confluence.html/reviews",
             "rel": "self"
           },
           {
-            "href": "/plugins/org.swift.confluence.table/reviews",
+            "href": "/plugins/org.swift.confluence.html/reviews",
             "rel": "alternate"
           }
         ],
-        "averageStars": 2.882352828979492,
-        "count": 34
+        "averageStars": 3.444444417953491,
+        "count": 9
       },
       "approval": {
         "status": "Public"
       },
-      "pluginKey": "org.swift.confluence.table",
+      "pluginKey": "org.swift.confluence.html",
       "isOldVersion": false,
       "activeInstalls": {
-        "downloadCount": 102784,
-        "totalInstalls": 3839,
-        "totalUsers": 6214697,
+        "downloadCount": 44835,
+        "totalInstalls": 1549,
+        "totalUsers": 3444475,
         "bundled": false,
-        "bundledOnDemand": true
+        "bundledOnDemand": false
       },
       "isNewPlugin": false,
       "categories": [
         {
           "links": [
             {
-              "href": "/rest/1.0/plugins?category=Documentation",
+              "href": "/rest/1.0/plugins?category=Reports+%26+charts",
               "rel": "self"
             },
             {
-              "href": "/plugins?category=Documentation",
+              "href": "/plugins?category=Reports+%26+charts",
               "rel": "alternate"
             }
           ],
-          "name": "Documentation"
+          "name": "Reports & charts"
         },
         {
           "links": [
@@ -2024,7 +368,7 @@
           },
           "name": "Confluence",
           "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
-          "pluginCount": 1109,
+          "pluginCount": 1102,
           "key": "confluence",
           "links": [
             {
@@ -2063,34 +407,34 @@
           }
         }
       ],
-      "summary": "Transform your data into rich, interactive Tables. Advanced Tables for Confluence enables you to dynamically add row numbers, column totals, and advanced styling, as well as import and format CSV data, display advanced lists of attachments, and more."
+      "summary": "Macros for rendering HTML and XSLT inside a Confluence page. Macros can be secured for trusted users by using our Macro Security for Confluence Add-on."
     },
     {
-      "downloadCount": 163004,
-      "name": "Tempo Timesheets for JIRA",
+      "downloadCount": 82674,
+      "name": "SQL for Confluence (Pro Edition)",
       "deployment": {
-        "onDemand": true,
+        "onDemand": false,
         "onPremise": true
       },
       "lastModified": {
-        "by": "Sverrir Tynes [Tempo]",
-        "date": "2016-05-04T16:47:20.322Z"
+        "by": "Bob Swift [Bob Swift Atlassian Add-ons]",
+        "date": "2016-05-17T12:55:59.035Z"
       },
       "dataCenterCompatible": true,
       "icons": {
         "default": {
           "links": [
             {
-              "href": "/rest/1.0/plugins/is.origo.jira.tempo-plugin/logo",
+              "href": "/rest/1.0/plugins/org.swift.confluence.sql/logo",
               "rel": "self"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/is.origo.jira.tempo-plugin/df6722b6-bcc5-472b-9c9e-8b496db392fb_scaled.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/images/31bc7262-02be-4c51-9308-6a18b6904cb4.png",
               "rel": "binary",
               "type": "image/png"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/is.origo.jira.tempo-plugin/df6722b6-bcc5-472b-9c9e-8b496db392fb.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/images/796bd373-dc51-4a99-9ffc-ae77b9b3440b.png",
               "rel": "high-res",
               "type": "image/png"
             }
@@ -2101,16 +445,16 @@
         "tiny": {
           "links": [
             {
-              "href": "/rest/1.0/plugins/is.origo.jira.tempo-plugin/icon",
+              "href": "/rest/1.0/plugins/org.swift.confluence.sql/icon",
               "rel": "self"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/is.origo.jira.tempo-plugin/df6722b6-bcc5-472b-9c9e-8b496db392fb_scaled_scaled.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/images/c72ab817-137b-4434-b2f1-0cd2143b0150.png",
               "rel": "binary",
               "type": "image/png"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/is.origo.jira.tempo-plugin/df6722b6-bcc5-472b-9c9e-8b496db392fb_scaled_high.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/images/86d06e81-e431-4f0c-9994-117c7c6346fd.png",
               "rel": "high-res",
               "type": "image/png"
             }
@@ -2119,354 +463,10 @@
           "height": 16
         }
       },
-      "lastReleasedDate": "2016-04-20T10:54:48.079Z",
+      "lastReleasedDate": "2016-05-12T15:06:14.048Z",
       "version": {
         "supportType": "Vendor",
-        "releaseDate": "2016-04-20T10:54:48.079Z",
-        "deployment": {
-          "permissions": [],
-          "remote": false,
-          "descriptorType": "xml",
-          "dataCenterCompatible": true
-        },
-        "deployable": true,
-        "marketplaceType": {
-          "type": "Paid via Atlassian",
-          "toolTip": "Evaluate and purchase this add-on through your MyAtlassian account."
-        },
-        "compatibilities": [
-          {
-            "applicationName": "JIRA",
-            "min": {
-              "version": "6.2",
-              "buildNumber": 6252
-            },
-            "max": {
-              "version": "7.1.6",
-              "buildNumber": 71010
-            },
-            "cloud": false
-          }
-        ],
-        "screenshots": [],
-        "license": {
-          "links": [],
-          "id": "commercial",
-          "name": "Commercial"
-        },
-        "version": "7.16.5",
-        "links": [
-          {
-            "href": "https://marketplace.atlassian.com/plugins/is.origo.jira.tempo-plugin/reviews",
-            "rel": "reviews",
-            "type": "text/html"
-          },
-          {
-            "href": "/rest/1.0/plugins/is.origo.jira.tempo-plugin/build-number/71650",
-            "rel": "self"
-          },
-          {
-            "href": "/plugins/is.origo.jira.tempo-plugin/versions#b71650",
-            "rel": "alternate"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/plugins/is.origo.jira.tempo-plugin/support",
-            "rel": "support"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/plugins/is.origo.jira.tempo-plugin/versions",
-            "rel": "version-history"
-          },
-          {
-            "href": "https://tempoplugin.jira.com/wiki/display/TEMPO/Tempo%20Timesheets%20Documentation",
-            "rel": "documentation"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/download/plugins/is.origo.jira.tempo-plugin/version/71650",
-            "rel": "binary"
-          }
-        ],
-        "status": "Public",
-        "releaseNotes": "<p>    In this version: </p> <ul>  <li>Various bugs in Tempo Scheduler fixed.     <li>Workflow not visible in Diagram mode after installing Tempo Timesheet - fixed     <li>..... and more  </ul> <p>  A know regression in this version is reported in <a href=\"https://tempoplugin.jira.com/browse/TT-3117\">TT-3117</a> </p> <p>    View <a href=\"https://tempoplugin.jira.com/wiki/display/TT/Tempo+Timesheets+7.16.5+Release+Notes\">Tempo Timesheets 7.16.5 Release Notes</a> page for all details. </p> <p>    IMPORTANT reading for administrators are the <a href=\"https://tempoplugin.jira.com/wiki/display/TT/Proactive+Actions+before+Upgrade\">Proactive Actions before Upgrade</a> pages. </p>",
-        "marketplaceAgreementAccepted": true,
-        "pluginSystemVersion": "Two",
-        "instructions": [],
-        "autoUpdateAllowed": false,
-        "compatibleApplications": [
-          {
-            "hostingSupport": {
-              "cloud": true,
-              "server": true
-            },
-            "name": "JIRA",
-            "introduction": "Nice one! Your team went JIRA. You've got a best-in-class issue tracker, but that's only the beginning. The Marketplace is brimming with apps for time-tracking, agile project management, test management, and integration with your other systems. Add-ons are ready to help make JIRA the best project tracker you've ever used.",
-            "pluginCount": 2641,
-            "key": "jira",
-            "links": [
-              {
-                "href": "/rest/1.0/applications/jira",
-                "rel": "self"
-              },
-              {
-                "href": "/rest/1.0/applications/jira/latest",
-                "rel": "latest-version"
-              },
-              {
-                "href": "/plugins/app/jira",
-                "rel": "alternate"
-              },
-              {
-                "href": "/plugins/app/jira/featured",
-                "rel": "featured-plugins"
-              },
-              {
-                "href": "/plugins/app/jira/popular",
-                "rel": "most-popular-plugins"
-              },
-              {
-                "href": "/plugins/app/jira/featured?hosting=cloud",
-                "rel": "ondemand-plugins"
-              }
-            ],
-            "atlassianConnectSupport": {
-              "cloud": true,
-              "server": false
-            },
-            "order": 0,
-            "status": {
-              "key": "Published",
-              "value": "Published"
-            }
-          }
-        ],
-        "stable": true,
-        "buildNumber": 71650,
-        "summary": "Bug fixes",
-        "addOnType": "Plugins 2"
-      },
-      "links": [
-        {
-          "href": "/rest/1.0/plugins/is.origo.jira.tempo-plugin",
-          "rel": "self"
-        },
-        {
-          "href": "/plugins/is.origo.jira.tempo-plugin/overview",
-          "rel": "alternate"
-        },
-        {
-          "href": "/plugins/is.origo.jira.tempo-plugin/history",
-          "rel": "history"
-        },
-        {
-          "href": "/rest/1.0/plugins/is.origo.jira.tempo-plugin/reviews",
-          "rel": "reviews",
-          "type": "application/json"
-        },
-        {
-          "href": "/plugins/is.origo.jira.tempo-plugin/versions",
-          "rel": "versions"
-        },
-        {
-          "href": "https://marketplace.atlassian.com/plugins/is.origo.jira.tempo-plugin/reviews",
-          "rel": "reviews",
-          "type": "text/html"
-        }
-      ],
-      "reviewSummary": {
-        "links": [
-          {
-            "href": "/rest/1.0/plugins/is.origo.jira.tempo-plugin/reviews",
-            "rel": "self"
-          },
-          {
-            "href": "/plugins/is.origo.jira.tempo-plugin/reviews",
-            "rel": "alternate"
-          }
-        ],
-        "averageStars": 3.278195381164551,
-        "count": 133
-      },
-      "approval": {
-        "status": "Public"
-      },
-      "pluginKey": "is.origo.jira.tempo-plugin",
-      "isOldVersion": false,
-      "activeInstalls": {
-        "downloadCount": 163004,
-        "totalInstalls": 9348,
-        "totalUsers": 1971627,
-        "bundled": false,
-        "bundledOnDemand": true
-      },
-      "isNewPlugin": false,
-      "categories": [
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Time+tracking",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Time+tracking",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Time tracking"
-        },
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Custom+fields",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Custom+fields",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Custom fields"
-        },
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Dashboard+gadgets",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Dashboard+gadgets",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Dashboard gadgets"
-        }
-      ],
-      "vendor": {
-        "name": "Tempo for JIRA",
-        "email": "service@tempo.io",
-        "links": [
-          {
-            "href": "/rest/1.0/vendors/6558",
-            "rel": "self"
-          },
-          {
-            "href": "/vendors/6558",
-            "rel": "alternate"
-          },
-          {
-            "href": "http://www.tempo.io",
-            "rel": "homepage"
-          }
-        ],
-        "id": 6558,
-        "verified": true
-      },
-      "compatibleApplications": [
-        {
-          "hostingSupport": {
-            "cloud": true,
-            "server": true
-          },
-          "name": "JIRA",
-          "introduction": "Nice one! Your team went JIRA. You've got a best-in-class issue tracker, but that's only the beginning. The Marketplace is brimming with apps for time-tracking, agile project management, test management, and integration with your other systems. Add-ons are ready to help make JIRA the best project tracker you've ever used.",
-          "pluginCount": 2641,
-          "key": "jira",
-          "links": [
-            {
-              "href": "/rest/1.0/applications/jira",
-              "rel": "self"
-            },
-            {
-              "href": "/rest/1.0/applications/jira/latest",
-              "rel": "latest-version"
-            },
-            {
-              "href": "/plugins/app/jira",
-              "rel": "alternate"
-            },
-            {
-              "href": "/plugins/app/jira/featured",
-              "rel": "featured-plugins"
-            },
-            {
-              "href": "/plugins/app/jira/popular",
-              "rel": "most-popular-plugins"
-            },
-            {
-              "href": "/plugins/app/jira/featured?hosting=cloud",
-              "rel": "ondemand-plugins"
-            }
-          ],
-          "atlassianConnectSupport": {
-            "cloud": true,
-            "server": false
-          },
-          "order": 0,
-          "status": {
-            "key": "Published",
-            "value": "Published"
-          }
-        }
-      ],
-      "summary": "Tempo Timesheets is a time tracking and reporting solution that seamlessly integrates with JIRA to help teams and managers track time for accounting, payroll, client billing, and forecasting. Time tracking means getting things done."
-    },
-    {
-      "downloadCount": 50069,
-      "name": "Draw.io Diagrams for Confluence",
-      "deployment": {
-        "onDemand": true,
-        "onPremise": true
-      },
-      "lastModified": {
-        "by": "David Benson [draw.io]",
-        "date": "2016-05-12T16:10:43.310Z"
-      },
-      "dataCenterCompatible": true,
-      "icons": {
-        "default": {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins/com.mxgraph.confluence.plugins.diagramly/logo",
-              "rel": "self"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/ffbfce1b-2cc2-4220-a339-32fad5994abb.png",
-              "rel": "binary",
-              "type": "image/png"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/4d2dcdd5-bc50-4419-86e1-bb414fdf045a.png",
-              "rel": "high-res",
-              "type": "image/png"
-            }
-          ],
-          "width": 72,
-          "height": 72
-        },
-        "tiny": {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins/com.mxgraph.confluence.plugins.diagramly/icon",
-              "rel": "self"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/ff92f0d9-f905-4845-89ef-1915b1f30747.png",
-              "rel": "binary",
-              "type": "image/png"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/e8e22c9d-0223-41dd-bd89-797621b5aa50.png",
-              "rel": "high-res",
-              "type": "image/png"
-            }
-          ],
-          "width": 16,
-          "height": 16
-        }
-      },
-      "lastReleasedDate": "2016-05-06T00:00:00.000Z",
-      "version": {
-        "supportType": "Vendor",
-        "releaseDate": "2016-05-06T00:00:00.000Z",
+        "releaseDate": "2016-05-12T15:06:14.048Z",
         "deployment": {
           "permissions": [],
           "remote": false,
@@ -2482,12 +482,12 @@
           {
             "applicationName": "Confluence",
             "min": {
-              "version": "5.4",
-              "buildNumber": 4726
+              "version": "5.5",
+              "buildNumber": 5501
             },
             "max": {
-              "version": "5.9.10",
-              "buildNumber": 6218
+              "version": "5.9.11",
+              "buildNumber": 6219
             },
             "cloud": false
           }
@@ -2498,52 +498,44 @@
           "id": "commercial",
           "name": "Commercial"
         },
-        "version": "5.4.5.2",
+        "version": "8.1.0",
         "links": [
           {
-            "href": "https://marketplace.atlassian.com/plugins/com.mxgraph.confluence.plugins.diagramly/reviews",
+            "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.sql/reviews",
             "rel": "reviews",
             "type": "text/html"
           },
           {
-            "href": "/rest/1.0/plugins/com.mxgraph.confluence.plugins.diagramly/build-number/500400520",
+            "href": "/rest/1.0/plugins/org.swift.confluence.sql/build-number/810",
             "rel": "self"
           },
           {
-            "href": "/plugins/com.mxgraph.confluence.plugins.diagramly/versions#b500400520",
+            "href": "/plugins/org.swift.confluence.sql/versions#b810",
             "rel": "alternate"
           },
           {
-            "href": "https://marketplace.atlassian.com/plugins/com.mxgraph.confluence.plugins.diagramly/support",
+            "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.sql/support",
             "rel": "support"
           },
           {
-            "href": "https://marketplace.atlassian.com/plugins/com.mxgraph.confluence.plugins.diagramly/versions",
+            "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.sql/versions",
             "rel": "version-history"
           },
           {
-            "href": "https://info.seibert-media.net/display/landingpage/draw.io%20for%20Confluence%20and%20JIRA%20-%20Test%2C%20Consultation%2C%20Licensing%2C%20Training%2C%20Adaptation",
-            "rel": "learn-more"
-          },
-          {
-            "href": "https://support.draw.io/display/DFCS/EULA",
+            "href": "https://bobswift.atlassian.net/wiki/x/WoDXBQ",
             "rel": "eula"
           },
           {
-            "href": "https://support.draw.io/display/DFCS/draw.io%20for%20Confluence%20Server",
+            "href": "https://bobswift.atlassian.net/wiki/display/SQL",
             "rel": "documentation"
           },
           {
-            "href": "https://support.draw.io/display/DFCS/EULA",
-            "rel": "license"
-          },
-          {
-            "href": "https://marketplace.atlassian.com/download/plugins/com.mxgraph.confluence.plugins.diagramly/version/500400520",
+            "href": "https://marketplace.atlassian.com/download/plugins/org.swift.confluence.sql/version/810",
             "rel": "binary"
           }
         ],
         "status": "Public",
-        "releaseNotes": "<ul>  <li>Fixes IE 11 and Safari issues with closing editor </ul>",
+        "releaseNotes": "<p>  <a href=\"https://bobswift.atlassian.net/wiki/display/SQL/Release+Notes+8.1?src=sidebar\" style=\"\">Release Notes 8.1</a> </p>",
         "marketplaceAgreementAccepted": true,
         "pluginSystemVersion": "Two",
         "instructions": [],
@@ -2556,7 +548,7 @@
             },
             "name": "Confluence",
             "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
-            "pluginCount": 1109,
+            "pluginCount": 1102,
             "key": "confluence",
             "links": [
               {
@@ -2596,65 +588,65 @@
           }
         ],
         "stable": true,
-        "buildNumber": 500400520,
-        "summary": "Fixes IE 11 and Safari issues with closing editor",
+        "buildNumber": 810,
+        "summary": "Fixes",
         "addOnType": "Plugins 2"
       },
       "links": [
         {
-          "href": "/rest/1.0/plugins/com.mxgraph.confluence.plugins.diagramly",
+          "href": "/rest/1.0/plugins/org.swift.confluence.sql",
           "rel": "self"
         },
         {
-          "href": "/plugins/com.mxgraph.confluence.plugins.diagramly/overview",
+          "href": "/plugins/org.swift.confluence.sql/overview",
           "rel": "alternate"
         },
         {
-          "href": "/plugins/com.mxgraph.confluence.plugins.diagramly/history",
+          "href": "/plugins/org.swift.confluence.sql/history",
           "rel": "history"
         },
         {
-          "href": "/rest/1.0/plugins/com.mxgraph.confluence.plugins.diagramly/reviews",
+          "href": "/rest/1.0/plugins/org.swift.confluence.sql/reviews",
           "rel": "reviews",
           "type": "application/json"
         },
         {
-          "href": "/plugins/com.mxgraph.confluence.plugins.diagramly/versions",
+          "href": "/plugins/org.swift.confluence.sql/versions",
           "rel": "versions"
         },
         {
-          "href": "https://marketplace.atlassian.com/plugins/com.mxgraph.confluence.plugins.diagramly/reviews",
+          "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.sql/reviews",
           "rel": "reviews",
           "type": "text/html"
         },
         {
-          "href": "https://support.draw.io/display/DFCS/draw%20for%20Confluence%20and%20JIRA%20Servers%20Privacy%20Policy",
+          "href": "https://bobswift.atlassian.net/wiki/display/info/Bob%20Swift%20Atlassian%20Add-ons%20EULA#BobSwiftAtlassianAdd-onsEULA-data_security_and_privacy",
           "rel": "privacy"
         }
       ],
       "reviewSummary": {
         "links": [
           {
-            "href": "/rest/1.0/plugins/com.mxgraph.confluence.plugins.diagramly/reviews",
+            "href": "/rest/1.0/plugins/org.swift.confluence.sql/reviews",
             "rel": "self"
           },
           {
-            "href": "/plugins/com.mxgraph.confluence.plugins.diagramly/reviews",
+            "href": "/plugins/org.swift.confluence.sql/reviews",
             "rel": "alternate"
           }
         ],
-        "averageStars": 3.830845832824707,
-        "count": 201
+        "averageStars": 2.777777671813965,
+        "count": 27
       },
       "approval": {
         "status": "Public"
       },
-      "pluginKey": "com.mxgraph.confluence.plugins.diagramly",
+      "pluginKey": "org.swift.confluence.sql",
       "isOldVersion": false,
       "activeInstalls": {
-        "downloadCount": 50069,
-        "totalInstalls": 5787,
-        "totalUsers": 2452023,
+        "downloadCount": 82674,
+        "totalInstalls": 2166,
+        "totalUsers": 2757801,
         "bundled": false,
         "bundledOnDemand": false
       },
@@ -2663,28 +655,15 @@
         {
           "links": [
             {
-              "href": "/rest/1.0/plugins?category=Diagramming",
+              "href": "/rest/1.0/plugins?category=Reports+%26+charts",
               "rel": "self"
             },
             {
-              "href": "/plugins?category=Diagramming",
+              "href": "/plugins?category=Reports+%26+charts",
               "rel": "alternate"
             }
           ],
-          "name": "Diagramming"
-        },
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Blueprints",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Blueprints",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Blueprints"
+          "name": "Reports & charts"
         },
         {
           "links": [
@@ -2701,23 +680,23 @@
         }
       ],
       "vendor": {
-        "name": "//SEIBERT/MEDIA - Draw.io",
-        "email": "support@draw.io",
+        "name": "Bob Swift Atlassian Add-ons (an Appfire company)",
+        "email": "info@bobswiftsoftware.com",
         "links": [
           {
-            "href": "/rest/1.0/vendors/1210578",
+            "href": "/rest/1.0/vendors/90",
             "rel": "self"
           },
           {
-            "href": "/vendors/1210578",
+            "href": "/vendors/90",
             "rel": "alternate"
           },
           {
-            "href": "https://info.seibert-media.net",
+            "href": "http://bobswiftsoftware.com",
             "rel": "homepage"
           }
         ],
-        "id": 1210578,
+        "id": 90,
         "verified": true
       },
       "compatibleApplications": [
@@ -2728,7 +707,7 @@
           },
           "name": "Confluence",
           "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
-          "pluginCount": 1109,
+          "pluginCount": 1102,
           "key": "confluence",
           "links": [
             {
@@ -2767,29 +746,29 @@
           }
         }
       ],
-      "summary": "draw.io is a diagramming plugin for Confluence and the #1 rated Confluence add-on since 2013."
+      "summary": "Ideal for generating Business Intelligence (BI) reports from external data within Confluence. Display SQL query results. Access JDBC compliant databases including MSSQL, Oracle, DB2, PostgreSQL, MySQL. Works with the Chart Macro and Macro Security."
     },
     {
-      "downloadCount": 116929,
-      "name": "Timesheet Reports and Gadgets for JIRA",
+      "downloadCount": 74453,
+      "name": "JIRA Misc Workflow Extensions",
       "deployment": {
-        "onDemand": false,
+        "onDemand": true,
         "onPremise": true
       },
       "lastModified": {
-        "by": "Andriy Zhdanov",
-        "date": "2016-05-13T12:14:46.896Z"
+        "by": "David [Innovalog]",
+        "date": "2016-05-19T22:22:53.126Z"
       },
       "dataCenterCompatible": true,
       "icons": {
         "default": {
           "links": [
             {
-              "href": "/rest/1.0/plugins/jira-timesheet-plugin/logo",
+              "href": "/rest/1.0/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/logo",
               "rel": "self"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/jira-timesheet-plugin/icons/default/d6ad2178-7817-4545-8422-a64e72034808.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/com.innovalog.jmwe.jira-misc-workflow-extensions/icons/default/fa8c72f9-2234-41bb-b332-ba1949b328c9.png",
               "rel": "binary",
               "type": "image/png"
             }
@@ -2800,16 +779,333 @@
         "tiny": {
           "links": [
             {
-              "href": "/rest/1.0/plugins/jira-timesheet-plugin/icon",
+              "href": "/rest/1.0/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/icon",
               "rel": "self"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/jira-timesheet-plugin/icons/default/d6ad2178-7817-4545-8422-a64e72034808_scaled.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/com.innovalog.jmwe.jira-misc-workflow-extensions/icons/tiny/e5639242-7506-45c1-b1d3-6646f899ff49.png",
+              "rel": "binary",
+              "type": "image/png"
+            }
+          ],
+          "width": 16,
+          "height": 16
+        }
+      },
+      "lastReleasedDate": "2016-02-26T00:00:00.000Z",
+      "version": {
+        "supportType": "Vendor",
+        "releaseDate": "2016-02-26T00:00:00.000Z",
+        "deployment": {
+          "permissions": [],
+          "remote": false,
+          "descriptorType": "xml",
+          "dataCenterCompatible": true
+        },
+        "deployable": true,
+        "marketplaceType": {
+          "type": "Paid via Atlassian",
+          "toolTip": "Evaluate and purchase this add-on through your MyAtlassian account."
+        },
+        "compatibilities": [
+          {
+            "applicationName": "JIRA",
+            "min": {
+              "version": "6.4",
+              "buildNumber": 64014
+            },
+            "max": {
+              "version": "7.1.7",
+              "buildNumber": 71011
+            },
+            "cloud": false
+          }
+        ],
+        "screenshots": [],
+        "license": {
+          "links": [],
+          "id": "commercial",
+          "name": "Commercial"
+        },
+        "version": "4.0.3",
+        "links": [
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/reviews",
+            "rel": "reviews",
+            "type": "text/html"
+          },
+          {
+            "href": "/rest/1.0/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/build-number/400000300",
+            "rel": "self"
+          },
+          {
+            "href": "/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/versions#b400000300",
+            "rel": "alternate"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/support",
+            "rel": "support"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/versions",
+            "rel": "version-history"
+          },
+          {
+            "href": "https://innovalog.atlassian.net/wiki/download/attachments/8552459/EULA%20v1.1.pdf?api=v2",
+            "rel": "eula"
+          },
+          {
+            "href": "https://innovalog.atlassian.net/wiki/display/JMWE",
+            "rel": "documentation"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/download/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/version/400000300",
+            "rel": "binary"
+          }
+        ],
+        "status": "Public",
+        "releaseNotes": "<p>  Bug fixes: </p> <ul>  <li>[<a href=\"https://innovalog.atlassian.net/browse/JMWE-398\">JMWE-398</a>] - Setting watchers from post-function is broken in JIRA 7  <li>[<a href=\"https://innovalog.atlassian.net/browse/JMWE-399\">JMWE-399</a>] - Cannot copy Project Picker type fields on JIRA 6.4  <li>[<a href=\"https://innovalog.atlassian.net/browse/JMWE-400\">JMWE-400</a>] - Issue with setting of value (nFeed) from a linked issue </ul> <p>  Improvement: </p> <ul>  <li>[<a href=\"https://innovalog.atlassian.net/browse/JMWE-401\">JMWE-401</a>] - Create a more explicit Configure page </ul>",
+        "marketplaceAgreementAccepted": true,
+        "pluginSystemVersion": "Two",
+        "instructions": [],
+        "autoUpdateAllowed": false,
+        "compatibleApplications": [
+          {
+            "hostingSupport": {
+              "cloud": true,
+              "server": true
+            },
+            "name": "JIRA",
+            "introduction": "Nice one! Your team went JIRA. You've got a best-in-class issue tracker, but that's only the beginning. The Marketplace is brimming with apps for time-tracking, agile project management, test management, and integration with your other systems. Add-ons are ready to help make JIRA the best project tracker you've ever used.",
+            "pluginCount": 2645,
+            "key": "jira",
+            "links": [
+              {
+                "href": "/rest/1.0/applications/jira",
+                "rel": "self"
+              },
+              {
+                "href": "/rest/1.0/applications/jira/latest",
+                "rel": "latest-version"
+              },
+              {
+                "href": "/plugins/app/jira",
+                "rel": "alternate"
+              },
+              {
+                "href": "/plugins/app/jira/featured",
+                "rel": "featured-plugins"
+              },
+              {
+                "href": "/plugins/app/jira/popular",
+                "rel": "most-popular-plugins"
+              },
+              {
+                "href": "/plugins/app/jira/featured?hosting=cloud",
+                "rel": "ondemand-plugins"
+              }
+            ],
+            "atlassianConnectSupport": {
+              "cloud": true,
+              "server": false
+            },
+            "order": 0,
+            "status": {
+              "key": "Published",
+              "value": "Published"
+            }
+          }
+        ],
+        "stable": true,
+        "buildNumber": 400000300,
+        "summary": "Bug fixes",
+        "addOnType": "Plugins 2"
+      },
+      "links": [
+        {
+          "href": "/rest/1.0/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions",
+          "rel": "self"
+        },
+        {
+          "href": "/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/overview",
+          "rel": "alternate"
+        },
+        {
+          "href": "/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/history",
+          "rel": "history"
+        },
+        {
+          "href": "/rest/1.0/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/reviews",
+          "rel": "reviews",
+          "type": "application/json"
+        },
+        {
+          "href": "/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/versions",
+          "rel": "versions"
+        },
+        {
+          "href": "https://marketplace.atlassian.com/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/reviews",
+          "rel": "reviews",
+          "type": "text/html"
+        }
+      ],
+      "reviewSummary": {
+        "links": [
+          {
+            "href": "/rest/1.0/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/reviews",
+            "rel": "self"
+          },
+          {
+            "href": "/plugins/com.innovalog.jmwe.jira-misc-workflow-extensions/reviews",
+            "rel": "alternate"
+          }
+        ],
+        "averageStars": 2.9696969985961914,
+        "count": 99
+      },
+      "approval": {
+        "status": "Public"
+      },
+      "pluginKey": "com.innovalog.jmwe.jira-misc-workflow-extensions",
+      "isOldVersion": false,
+      "activeInstalls": {
+        "downloadCount": 74453,
+        "totalInstalls": 5674,
+        "totalUsers": 5142983,
+        "bundled": false,
+        "bundledOnDemand": true
+      },
+      "isNewPlugin": false,
+      "categories": [
+        {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins?category=Workflow",
+              "rel": "self"
+            },
+            {
+              "href": "/plugins?category=Workflow",
+              "rel": "alternate"
+            }
+          ],
+          "name": "Workflow"
+        }
+      ],
+      "vendor": {
+        "name": "Innovalog",
+        "email": "atlassian@innovalog.com",
+        "links": [
+          {
+            "href": "/rest/1.0/vendors/101",
+            "rel": "self"
+          },
+          {
+            "href": "/vendors/101",
+            "rel": "alternate"
+          },
+          {
+            "href": "http://www.innovalog.com/",
+            "rel": "homepage"
+          }
+        ],
+        "id": 101,
+        "verified": true
+      },
+      "compatibleApplications": [
+        {
+          "hostingSupport": {
+            "cloud": true,
+            "server": true
+          },
+          "name": "JIRA",
+          "introduction": "Nice one! Your team went JIRA. You've got a best-in-class issue tracker, but that's only the beginning. The Marketplace is brimming with apps for time-tracking, agile project management, test management, and integration with your other systems. Add-ons are ready to help make JIRA the best project tracker you've ever used.",
+          "pluginCount": 2645,
+          "key": "jira",
+          "links": [
+            {
+              "href": "/rest/1.0/applications/jira",
+              "rel": "self"
+            },
+            {
+              "href": "/rest/1.0/applications/jira/latest",
+              "rel": "latest-version"
+            },
+            {
+              "href": "/plugins/app/jira",
+              "rel": "alternate"
+            },
+            {
+              "href": "/plugins/app/jira/featured",
+              "rel": "featured-plugins"
+            },
+            {
+              "href": "/plugins/app/jira/popular",
+              "rel": "most-popular-plugins"
+            },
+            {
+              "href": "/plugins/app/jira/featured?hosting=cloud",
+              "rel": "ondemand-plugins"
+            }
+          ],
+          "atlassianConnectSupport": {
+            "cloud": true,
+            "server": false
+          },
+          "order": 0,
+          "status": {
+            "key": "Published",
+            "value": "Published"
+          }
+        }
+      ],
+      "summary": "The JIRA Misc Workflow Extensions plugin provides an assortment of\r\nworkflow conditions, validators and post-functions that you can use to\r\nimplement custom workflows in JIRA."
+    },
+    {
+      "downloadCount": 118892,
+      "name": "Content Formatting for Confluence",
+      "deployment": {
+        "onDemand": true,
+        "onPremise": true
+      },
+      "lastModified": {
+        "by": "Rafael Franco [Adaptavist]",
+        "date": "2016-04-20T14:35:15.046Z"
+      },
+      "dataCenterCompatible": true,
+      "icons": {
+        "default": {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins/com.adaptavist.confluence.contentFormattingMacros/logo",
+              "rel": "self"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/647b8d09-3eee-480c-9254-80e842dc1cc0.png",
               "rel": "binary",
               "type": "image/png"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/jira-timesheet-plugin/icons/default/d6ad2178-7817-4545-8422-a64e72034808_high.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/images/54d2abdd-ec5d-4745-bf92-c765791fdc56.png",
+              "rel": "high-res",
+              "type": "image/png"
+            }
+          ],
+          "width": 72,
+          "height": 72
+        },
+        "tiny": {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins/com.adaptavist.confluence.contentFormattingMacros/icon",
+              "rel": "self"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/4082e188-daf0-4209-89c6-96327072afd2.png",
+              "rel": "binary",
+              "type": "image/png"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/9237b449-ca48-430c-b5cd-05c013b0c80f.png",
               "rel": "high-res",
               "type": "image/png"
             }
@@ -2818,10 +1114,675 @@
           "height": 16
         }
       },
-      "lastReleasedDate": "2016-05-13T00:00:00.000Z",
+      "lastReleasedDate": "2016-02-29T00:00:00.000Z",
       "version": {
         "supportType": "Vendor",
-        "releaseDate": "2016-05-13T00:00:00.000Z",
+        "releaseDate": "2016-02-29T00:00:00.000Z",
+        "deployment": {
+          "permissions": [],
+          "remote": false,
+          "descriptorType": "xml",
+          "dataCenterCompatible": true
+        },
+        "deployable": true,
+        "marketplaceType": {
+          "type": "Paid via Atlassian",
+          "toolTip": "Evaluate and purchase this add-on through your MyAtlassian account."
+        },
+        "compatibilities": [
+          {
+            "applicationName": "Confluence",
+            "min": {
+              "version": "5.6",
+              "buildNumber": 5634
+            },
+            "max": {
+              "version": "5.9.11",
+              "buildNumber": 6219
+            },
+            "cloud": false
+          }
+        ],
+        "screenshots": [],
+        "license": {
+          "links": [],
+          "id": "commercial",
+          "name": "Commercial"
+        },
+        "version": "4.2.19",
+        "links": [
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.adaptavist.confluence.contentFormattingMacros/reviews",
+            "rel": "reviews",
+            "type": "text/html"
+          },
+          {
+            "href": "/rest/1.0/plugins/com.adaptavist.confluence.contentFormattingMacros/build-number/520",
+            "rel": "self"
+          },
+          {
+            "href": "/plugins/com.adaptavist.confluence.contentFormattingMacros/versions#b520",
+            "rel": "alternate"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.adaptavist.confluence.contentFormattingMacros/support",
+            "rel": "support"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.adaptavist.confluence.contentFormattingMacros/versions",
+            "rel": "version-history"
+          },
+          {
+            "href": "http://www.adaptavist.com/doco/display/CFP/Content%20Formatting%20Macros%20Plugin",
+            "rel": "learn-more"
+          },
+          {
+            "href": "http://www.adaptavist.com/w/about/adaptavist-product-support-eula/",
+            "rel": "eula"
+          },
+          {
+            "href": "http://www.adaptavist.com/doco/display/CFP/Content%20Formatting%20Macros%20Plugin",
+            "rel": "documentation"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/download/plugins/com.adaptavist.confluence.contentFormattingMacros/version/520",
+            "rel": "binary"
+          }
+        ],
+        "status": "Public",
+        "releaseNotes": "<p>  New in the Release : </p> <p>  CONTENTF-257 - AUI Button to open pages in a new tab </p>",
+        "marketplaceAgreementAccepted": true,
+        "pluginSystemVersion": "Two",
+        "instructions": [],
+        "autoUpdateAllowed": false,
+        "compatibleApplications": [
+          {
+            "hostingSupport": {
+              "cloud": true,
+              "server": true
+            },
+            "name": "Confluence",
+            "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
+            "pluginCount": 1102,
+            "key": "confluence",
+            "links": [
+              {
+                "href": "/rest/1.0/applications/confluence",
+                "rel": "self"
+              },
+              {
+                "href": "/rest/1.0/applications/confluence/latest",
+                "rel": "latest-version"
+              },
+              {
+                "href": "/plugins/app/confluence",
+                "rel": "alternate"
+              },
+              {
+                "href": "/plugins/app/confluence/featured",
+                "rel": "featured-plugins"
+              },
+              {
+                "href": "/plugins/app/confluence/popular",
+                "rel": "most-popular-plugins"
+              },
+              {
+                "href": "/plugins/app/confluence/featured?hosting=cloud",
+                "rel": "ondemand-plugins"
+              }
+            ],
+            "atlassianConnectSupport": {
+              "cloud": true,
+              "server": false
+            },
+            "order": 3,
+            "status": {
+              "key": "Published",
+              "value": "Published"
+            }
+          }
+        ],
+        "stable": true,
+        "buildNumber": 520,
+        "summary": "Patch Release",
+        "addOnType": "Plugins 2"
+      },
+      "links": [
+        {
+          "href": "/rest/1.0/plugins/com.adaptavist.confluence.contentFormattingMacros",
+          "rel": "self"
+        },
+        {
+          "href": "/plugins/com.adaptavist.confluence.contentFormattingMacros/overview",
+          "rel": "alternate"
+        },
+        {
+          "href": "/plugins/com.adaptavist.confluence.contentFormattingMacros/history",
+          "rel": "history"
+        },
+        {
+          "href": "/rest/1.0/plugins/com.adaptavist.confluence.contentFormattingMacros/reviews",
+          "rel": "reviews",
+          "type": "application/json"
+        },
+        {
+          "href": "/plugins/com.adaptavist.confluence.contentFormattingMacros/versions",
+          "rel": "versions"
+        },
+        {
+          "href": "https://marketplace.atlassian.com/plugins/com.adaptavist.confluence.contentFormattingMacros/reviews",
+          "rel": "reviews",
+          "type": "text/html"
+        }
+      ],
+      "reviewSummary": {
+        "links": [
+          {
+            "href": "/rest/1.0/plugins/com.adaptavist.confluence.contentFormattingMacros/reviews",
+            "rel": "self"
+          },
+          {
+            "href": "/plugins/com.adaptavist.confluence.contentFormattingMacros/reviews",
+            "rel": "alternate"
+          }
+        ],
+        "averageStars": 3.076923131942749,
+        "count": 39
+      },
+      "approval": {
+        "status": "Public"
+      },
+      "pluginKey": "com.adaptavist.confluence.contentFormattingMacros",
+      "isOldVersion": false,
+      "activeInstalls": {
+        "downloadCount": 118892,
+        "totalInstalls": 5250,
+        "totalUsers": 8272528,
+        "bundled": false,
+        "bundledOnDemand": true
+      },
+      "isNewPlugin": false,
+      "categories": [
+        {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins?category=Document+management",
+              "rel": "self"
+            },
+            {
+              "href": "/plugins?category=Document+management",
+              "rel": "alternate"
+            }
+          ],
+          "name": "Document management"
+        },
+        {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins?category=Macros",
+              "rel": "self"
+            },
+            {
+              "href": "/plugins?category=Macros",
+              "rel": "alternate"
+            }
+          ],
+          "name": "Macros"
+        }
+      ],
+      "vendor": {
+        "name": "Adaptavist",
+        "email": "plugin-support@adaptavist.com",
+        "links": [
+          {
+            "href": "/rest/1.0/vendors/81",
+            "rel": "self"
+          },
+          {
+            "href": "/vendors/81",
+            "rel": "alternate"
+          },
+          {
+            "href": "http://www.adaptavist.com/",
+            "rel": "homepage"
+          }
+        ],
+        "id": 81,
+        "verified": true
+      },
+      "compatibleApplications": [
+        {
+          "hostingSupport": {
+            "cloud": true,
+            "server": true
+          },
+          "name": "Confluence",
+          "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
+          "pluginCount": 1102,
+          "key": "confluence",
+          "links": [
+            {
+              "href": "/rest/1.0/applications/confluence",
+              "rel": "self"
+            },
+            {
+              "href": "/rest/1.0/applications/confluence/latest",
+              "rel": "latest-version"
+            },
+            {
+              "href": "/plugins/app/confluence",
+              "rel": "alternate"
+            },
+            {
+              "href": "/plugins/app/confluence/featured",
+              "rel": "featured-plugins"
+            },
+            {
+              "href": "/plugins/app/confluence/popular",
+              "rel": "most-popular-plugins"
+            },
+            {
+              "href": "/plugins/app/confluence/featured?hosting=cloud",
+              "rel": "ondemand-plugins"
+            }
+          ],
+          "atlassianConnectSupport": {
+            "cloud": true,
+            "server": false
+          },
+          "order": 3,
+          "status": {
+            "key": "Published",
+            "value": "Published"
+          }
+        }
+      ],
+      "summary": "Content Formatting for Confluence is a set of Free and Premium macros that help you to create beautifully presented Confluence pages. Upgrade to Premium and gain access Tabs, Progress Bars and many other macros."
+    },
+    {
+      "downloadCount": 32655,
+      "name": "Run Self-Service Reports for Confluence",
+      "deployment": {
+        "onDemand": false,
+        "onPremise": true
+      },
+      "lastModified": {
+        "by": "Bob Swift [Bob Swift Atlassian Add-ons]",
+        "date": "2016-04-13T12:16:53.463Z"
+      },
+      "dataCenterCompatible": true,
+      "icons": {
+        "default": {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins/org.swift.confluence.run/logo",
+              "rel": "self"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/69bf4945-2697-4e1f-840f-1ab0d0931d67.png",
+              "rel": "binary",
+              "type": "image/png"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/b2f18736-bb31-4fd7-afa7-7265265fa2cc.png",
+              "rel": "high-res",
+              "type": "image/png"
+            }
+          ],
+          "width": 72,
+          "height": 72
+        },
+        "tiny": {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins/org.swift.confluence.run/icon",
+              "rel": "self"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/a8802e26-c6a0-437f-89b9-c2d4e606ad13.png",
+              "rel": "binary",
+              "type": "image/png"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/383e72ac-e691-4270-b2d1-2c59c09c8831.png",
+              "rel": "high-res",
+              "type": "image/png"
+            }
+          ],
+          "width": 16,
+          "height": 16
+        }
+      },
+      "lastReleasedDate": "2016-04-08T02:18:16.219Z",
+      "version": {
+        "supportType": "Vendor",
+        "releaseDate": "2016-04-08T02:18:16.219Z",
+        "deployment": {
+          "permissions": [],
+          "remote": false,
+          "descriptorType": "xml",
+          "dataCenterCompatible": true
+        },
+        "deployable": true,
+        "marketplaceType": {
+          "type": "Paid via Atlassian",
+          "toolTip": "Evaluate and purchase this add-on through your MyAtlassian account."
+        },
+        "compatibilities": [
+          {
+            "applicationName": "Confluence",
+            "min": {
+              "version": "5.5",
+              "buildNumber": 5501
+            },
+            "max": {
+              "version": "5.9.11",
+              "buildNumber": 6219
+            },
+            "cloud": false
+          }
+        ],
+        "screenshots": [],
+        "license": {
+          "links": [],
+          "id": "commercial",
+          "name": "Commercial"
+        },
+        "version": "5.2.0",
+        "links": [
+          {
+            "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.run/reviews",
+            "rel": "reviews",
+            "type": "text/html"
+          },
+          {
+            "href": "/rest/1.0/plugins/org.swift.confluence.run/build-number/520",
+            "rel": "self"
+          },
+          {
+            "href": "/plugins/org.swift.confluence.run/versions#b520",
+            "rel": "alternate"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.run/support",
+            "rel": "support"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.run/versions",
+            "rel": "version-history"
+          },
+          {
+            "href": "https://bobswift.atlassian.net/wiki/x/WoDXBQ",
+            "rel": "eula"
+          },
+          {
+            "href": "https://bobswift.atlassian.net/wiki/display/RUN",
+            "rel": "documentation"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/download/plugins/org.swift.confluence.run/version/520",
+            "rel": "binary"
+          }
+        ],
+        "status": "Public",
+        "releaseNotes": "<p>  <a href=\"https://bobswift.atlassian.net/wiki/display/RUN/Release+Notes+5.2?src=sidebar\" style=\"\">Release Notes 5.2</a> </p>",
+        "marketplaceAgreementAccepted": true,
+        "pluginSystemVersion": "Two",
+        "instructions": [],
+        "autoUpdateAllowed": false,
+        "compatibleApplications": [
+          {
+            "hostingSupport": {
+              "cloud": true,
+              "server": true
+            },
+            "name": "Confluence",
+            "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
+            "pluginCount": 1102,
+            "key": "confluence",
+            "links": [
+              {
+                "href": "/rest/1.0/applications/confluence",
+                "rel": "self"
+              },
+              {
+                "href": "/rest/1.0/applications/confluence/latest",
+                "rel": "latest-version"
+              },
+              {
+                "href": "/plugins/app/confluence",
+                "rel": "alternate"
+              },
+              {
+                "href": "/plugins/app/confluence/featured",
+                "rel": "featured-plugins"
+              },
+              {
+                "href": "/plugins/app/confluence/popular",
+                "rel": "most-popular-plugins"
+              },
+              {
+                "href": "/plugins/app/confluence/featured?hosting=cloud",
+                "rel": "ondemand-plugins"
+              }
+            ],
+            "atlassianConnectSupport": {
+              "cloud": true,
+              "server": false
+            },
+            "order": 3,
+            "status": {
+              "key": "Published",
+              "value": "Published"
+            }
+          }
+        ],
+        "stable": true,
+        "buildNumber": 520,
+        "summary": "Fixes",
+        "addOnType": "Plugins 2"
+      },
+      "links": [
+        {
+          "href": "/rest/1.0/plugins/org.swift.confluence.run",
+          "rel": "self"
+        },
+        {
+          "href": "/plugins/org.swift.confluence.run/overview",
+          "rel": "alternate"
+        },
+        {
+          "href": "/plugins/org.swift.confluence.run/history",
+          "rel": "history"
+        },
+        {
+          "href": "/rest/1.0/plugins/org.swift.confluence.run/reviews",
+          "rel": "reviews",
+          "type": "application/json"
+        },
+        {
+          "href": "/plugins/org.swift.confluence.run/versions",
+          "rel": "versions"
+        },
+        {
+          "href": "https://marketplace.atlassian.com/plugins/org.swift.confluence.run/reviews",
+          "rel": "reviews",
+          "type": "text/html"
+        },
+        {
+          "href": "https://bobswift.atlassian.net/wiki/display/info/Bob%20Swift%20Atlassian%20Add-ons%20EULA#BobSwiftAtlassianAdd-onsEULA-data_security_and_privacy",
+          "rel": "privacy"
+        }
+      ],
+      "reviewSummary": {
+        "links": [
+          {
+            "href": "/rest/1.0/plugins/org.swift.confluence.run/reviews",
+            "rel": "self"
+          },
+          {
+            "href": "/plugins/org.swift.confluence.run/reviews",
+            "rel": "alternate"
+          }
+        ],
+        "averageStars": 3.9000000953674316,
+        "count": 10
+      },
+      "approval": {
+        "status": "Public"
+      },
+      "pluginKey": "org.swift.confluence.run",
+      "isOldVersion": false,
+      "activeInstalls": {
+        "downloadCount": 32655,
+        "totalInstalls": 1030,
+        "totalUsers": 1401665,
+        "bundled": false,
+        "bundledOnDemand": false
+      },
+      "isNewPlugin": false,
+      "categories": [
+        {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins?category=Macros",
+              "rel": "self"
+            },
+            {
+              "href": "/plugins?category=Macros",
+              "rel": "alternate"
+            }
+          ],
+          "name": "Macros"
+        }
+      ],
+      "vendor": {
+        "name": "Bob Swift Atlassian Add-ons (an Appfire company)",
+        "email": "info@bobswiftsoftware.com",
+        "links": [
+          {
+            "href": "/rest/1.0/vendors/90",
+            "rel": "self"
+          },
+          {
+            "href": "/vendors/90",
+            "rel": "alternate"
+          },
+          {
+            "href": "http://bobswiftsoftware.com",
+            "rel": "homepage"
+          }
+        ],
+        "id": 90,
+        "verified": true
+      },
+      "compatibleApplications": [
+        {
+          "hostingSupport": {
+            "cloud": true,
+            "server": true
+          },
+          "name": "Confluence",
+          "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
+          "pluginCount": 1102,
+          "key": "confluence",
+          "links": [
+            {
+              "href": "/rest/1.0/applications/confluence",
+              "rel": "self"
+            },
+            {
+              "href": "/rest/1.0/applications/confluence/latest",
+              "rel": "latest-version"
+            },
+            {
+              "href": "/plugins/app/confluence",
+              "rel": "alternate"
+            },
+            {
+              "href": "/plugins/app/confluence/featured",
+              "rel": "featured-plugins"
+            },
+            {
+              "href": "/plugins/app/confluence/popular",
+              "rel": "most-popular-plugins"
+            },
+            {
+              "href": "/plugins/app/confluence/featured?hosting=cloud",
+              "rel": "ondemand-plugins"
+            }
+          ],
+          "atlassianConnectSupport": {
+            "cloud": true,
+            "server": false
+          },
+          "order": 3,
+          "status": {
+            "key": "Published",
+            "value": "Published"
+          }
+        }
+      ],
+      "summary": "Ideal for building dynamic self-service forms that anyone can use to generate Business Intelligence (BI) reports. Macro displays a dialog for substitution parameters and then renders the body contents after substitution."
+    },
+    {
+      "downloadCount": 145885,
+      "name": "ScriptRunner for JIRA",
+      "deployment": {
+        "onDemand": false,
+        "onPremise": true
+      },
+      "lastModified": {
+        "by": "Jamie Echlin (Adaptavist)",
+        "date": "2016-05-20T14:20:37.368Z"
+      },
+      "dataCenterCompatible": true,
+      "icons": {
+        "default": {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins/com.onresolve.jira.groovy.groovyrunner/logo",
+              "rel": "self"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/996d7382-44c5-4b98-b585-806201cf8d0a.png",
+              "rel": "binary",
+              "type": "image/png"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/a101f51b-594a-4a33-9f70-4c58fcc6a82c.png",
+              "rel": "high-res",
+              "type": "image/png"
+            }
+          ],
+          "width": 72,
+          "height": 72
+        },
+        "tiny": {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins/com.onresolve.jira.groovy.groovyrunner/icon",
+              "rel": "self"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/9b156b66-0bae-4270-b60b-99f5d66a1597.png",
+              "rel": "binary",
+              "type": "image/png"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/4cf16c08-9b2e-4fc1-9487-fd51d4d4b545.png",
+              "rel": "high-res",
+              "type": "image/png"
+            }
+          ],
+          "width": 16,
+          "height": 16
+        }
+      },
+      "lastReleasedDate": "2016-05-20T00:00:00.000Z",
+      "version": {
+        "supportType": "Vendor",
+        "releaseDate": "2016-05-20T00:00:00.000Z",
         "deployment": {
           "permissions": [],
           "remote": false,
@@ -2853,40 +1814,44 @@
           "id": "commercial",
           "name": "Commercial"
         },
-        "version": "3.0.5.1",
+        "version": "4.3.1",
         "links": [
           {
-            "href": "https://marketplace.atlassian.com/plugins/jira-timesheet-plugin/reviews",
+            "href": "https://marketplace.atlassian.com/plugins/com.onresolve.jira.groovy.groovyrunner/reviews",
             "rel": "reviews",
             "type": "text/html"
           },
           {
-            "href": "/rest/1.0/plugins/jira-timesheet-plugin/build-number/1455",
+            "href": "/rest/1.0/plugins/com.onresolve.jira.groovy.groovyrunner/build-number/1566",
             "rel": "self"
           },
           {
-            "href": "/plugins/jira-timesheet-plugin/versions#b1455",
+            "href": "/plugins/com.onresolve.jira.groovy.groovyrunner/versions#b1566",
             "rel": "alternate"
           },
           {
-            "href": "https://marketplace.atlassian.com/plugins/jira-timesheet-plugin/support",
+            "href": "https://marketplace.atlassian.com/plugins/com.onresolve.jira.groovy.groovyrunner/support",
             "rel": "support"
           },
           {
-            "href": "https://marketplace.atlassian.com/plugins/jira-timesheet-plugin/versions",
+            "href": "https://marketplace.atlassian.com/plugins/com.onresolve.jira.groovy.groovyrunner/versions",
             "rel": "version-history"
           },
           {
-            "href": "http://www.jiratimesheet.com/wiki/Overview.html",
+            "href": "http://www.adaptavist.com/w/about/adaptavist-product-support-eula/",
+            "rel": "eula"
+          },
+          {
+            "href": "https://scriptrunner.adaptavist.com/latest/jira/",
             "rel": "documentation"
           },
           {
-            "href": "https://marketplace.atlassian.com/download/plugins/jira-timesheet-plugin/version/1455",
+            "href": "https://marketplace.atlassian.com/download/plugins/com.onresolve.jira.groovy.groovyrunner/version/1566",
             "rel": "binary"
           }
         ],
         "status": "Public",
-        "releaseNotes": "<ul>  <li>issue<a href=\"https://bitbucket.org/azhdanov/jiratimesheet/issues/854/inactive-users-still-receive-e-mail\" style=\"\">#854</a>: skip timesheet job for inactive users  <li>issue<a href=\"https://bitbucket.org/azhdanov/jiratimesheet/issues/812/error-on-reporting-worklog\">#812</a>: escape worklog comment  <li>issue<a href=\"https://bitbucket.org/azhdanov/jiratimesheet/issues/849/question-do-you-know-why-i-cant-see\">#849</a>: do not encodeSpecialChars  <li>issue<a href=\"https://bitbucket.org/azhdanov/jiratimesheet/issues/845/wrong-link-in-more-options-popup-intsr\">#845</a>: more options worklog popup link in case of group by </ul>",
+        "releaseNotes": "<p>  See the full release notes at </p> <p>  https://scriptrunner.adaptavist.com/latest/jira/releases/current-release.html </p>",
         "marketplaceAgreementAccepted": true,
         "pluginSystemVersion": "Two",
         "instructions": [],
@@ -2899,7 +1864,7 @@
             },
             "name": "JIRA",
             "introduction": "Nice one! Your team went JIRA. You've got a best-in-class issue tracker, but that's only the beginning. The Marketplace is brimming with apps for time-tracking, agile project management, test management, and integration with your other systems. Add-ons are ready to help make JIRA the best project tracker you've ever used.",
-            "pluginCount": 2641,
+            "pluginCount": 2645,
             "key": "jira",
             "links": [
               {
@@ -2939,34 +1904,34 @@
           }
         ],
         "stable": true,
-        "buildNumber": 1455,
-        "summary": "Minor fixes",
+        "buildNumber": 1566,
+        "summary": "Version sync, transition options, bug fixes: http://bit.ly/1pm01z1",
         "addOnType": "Plugins 2"
       },
       "links": [
         {
-          "href": "/rest/1.0/plugins/jira-timesheet-plugin",
+          "href": "/rest/1.0/plugins/com.onresolve.jira.groovy.groovyrunner",
           "rel": "self"
         },
         {
-          "href": "/plugins/jira-timesheet-plugin/overview",
+          "href": "/plugins/com.onresolve.jira.groovy.groovyrunner/overview",
           "rel": "alternate"
         },
         {
-          "href": "/plugins/jira-timesheet-plugin/history",
+          "href": "/plugins/com.onresolve.jira.groovy.groovyrunner/history",
           "rel": "history"
         },
         {
-          "href": "/rest/1.0/plugins/jira-timesheet-plugin/reviews",
+          "href": "/rest/1.0/plugins/com.onresolve.jira.groovy.groovyrunner/reviews",
           "rel": "reviews",
           "type": "application/json"
         },
         {
-          "href": "/plugins/jira-timesheet-plugin/versions",
+          "href": "/plugins/com.onresolve.jira.groovy.groovyrunner/versions",
           "rel": "versions"
         },
         {
-          "href": "https://marketplace.atlassian.com/plugins/jira-timesheet-plugin/reviews",
+          "href": "https://marketplace.atlassian.com/plugins/com.onresolve.jira.groovy.groovyrunner/reviews",
           "rel": "reviews",
           "type": "text/html"
         }
@@ -2974,76 +1939,76 @@
       "reviewSummary": {
         "links": [
           {
-            "href": "/rest/1.0/plugins/jira-timesheet-plugin/reviews",
+            "href": "/rest/1.0/plugins/com.onresolve.jira.groovy.groovyrunner/reviews",
             "rel": "self"
           },
           {
-            "href": "/plugins/jira-timesheet-plugin/reviews",
+            "href": "/plugins/com.onresolve.jira.groovy.groovyrunner/reviews",
             "rel": "alternate"
           }
         ],
-        "averageStars": 3.3221476078033447,
-        "count": 149
+        "averageStars": 3.653409004211426,
+        "count": 176
       },
       "approval": {
         "status": "Public"
       },
-      "pluginKey": "jira-timesheet-plugin",
+      "pluginKey": "com.onresolve.jira.groovy.groovyrunner",
       "isOldVersion": false,
       "activeInstalls": {
-        "downloadCount": 116929,
-        "totalInstalls": 6323,
-        "totalUsers": 3278542,
+        "downloadCount": 145885,
+        "totalInstalls": 13112,
+        "totalUsers": 9928483,
         "bundled": false,
-        "bundledOnDemand": true
+        "bundledOnDemand": false
       },
       "isNewPlugin": false,
       "categories": [
         {
           "links": [
             {
-              "href": "/rest/1.0/plugins?category=Time+tracking",
+              "href": "/rest/1.0/plugins?category=Admin+tools",
               "rel": "self"
             },
             {
-              "href": "/plugins?category=Time+tracking",
+              "href": "/plugins?category=Admin+tools",
               "rel": "alternate"
             }
           ],
-          "name": "Time tracking"
+          "name": "Admin tools"
         },
         {
           "links": [
             {
-              "href": "/rest/1.0/plugins?category=Dashboard+gadgets",
+              "href": "/rest/1.0/plugins?category=Custom+fields",
               "rel": "self"
             },
             {
-              "href": "/plugins?category=Dashboard+gadgets",
+              "href": "/plugins?category=Custom+fields",
               "rel": "alternate"
             }
           ],
-          "name": "Dashboard gadgets"
+          "name": "Custom fields"
         }
       ],
       "vendor": {
-        "name": "Andriy Zhdanov",
-        "email": "azhdanov@gmail.com",
+        "name": "Adaptavist",
+        "email": "plugin-support@adaptavist.com",
         "links": [
           {
-            "href": "/rest/1.0/vendors/120",
+            "href": "/rest/1.0/vendors/81",
             "rel": "self"
           },
           {
-            "href": "/vendors/120",
+            "href": "/vendors/81",
             "rel": "alternate"
           },
           {
-            "href": "http://www.jiratimesheet.com",
+            "href": "http://www.adaptavist.com/",
             "rel": "homepage"
           }
         ],
-        "id": 120,
+        "id": 81,
         "verified": true
       },
       "compatibleApplications": [
@@ -3054,7 +2019,7 @@
           },
           "name": "JIRA",
           "introduction": "Nice one! Your team went JIRA. You've got a best-in-class issue tracker, but that's only the beginning. The Marketplace is brimming with apps for time-tracking, agile project management, test management, and integration with your other systems. Add-ons are ready to help make JIRA the best project tracker you've ever used.",
-          "pluginCount": 2641,
+          "pluginCount": 2645,
           "key": "jira",
           "links": [
             {
@@ -3093,35 +2058,30 @@
           }
         }
       ],
-      "summary": "Flexible time reporting with Time Sheet and Project Pivot Reports and Gadgets and Pie Chart for JIRA dashboard or confluence. Automatic reporting with periodic email or REST endpoint."
+      "summary": "Execute admin and workflow functions as scripts written in groovy and\r\nother scripting languages, without having to write a full-blown Add-on."
     },
     {
-      "downloadCount": 61127,
-      "name": "Zephyr for JIRA - Test Management",
+      "downloadCount": 61947,
+      "name": "Email This Issue",
       "deployment": {
-        "onDemand": true,
+        "onDemand": false,
         "onPremise": true
       },
       "lastModified": {
-        "by": "Samir Shah",
-        "date": "2016-05-05T04:37:03.874Z"
+        "by": "Tibor Hegyi [META-INF]",
+        "date": "2016-04-13T03:42:10.089Z"
       },
       "dataCenterCompatible": true,
       "icons": {
         "default": {
           "links": [
             {
-              "href": "/rest/1.0/plugins/com.thed.zephyr.je/logo",
+              "href": "/rest/1.0/plugins/com.metainf.jira.plugin.emailissue/logo",
               "rel": "self"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/5082c2a0-4a6c-415b-898b-4e12e2db5107.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/images/com.metainf.jira.plugin.emailissue/046ce34e-029b-4fa8-b89e-d63fe67fa7a3_scaled.png",
               "rel": "binary",
-              "type": "image/png"
-            },
-            {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/cdc7ceca-50a4-46e4-b395-374073110df4.png",
-              "rel": "high-res",
               "type": "image/png"
             }
           ],
@@ -3131,16 +2091,16 @@
         "tiny": {
           "links": [
             {
-              "href": "/rest/1.0/plugins/com.thed.zephyr.je/icon",
+              "href": "/rest/1.0/plugins/com.metainf.jira.plugin.emailissue/icon",
               "rel": "self"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/4ee93129-d2b1-4302-9f5b-6f3a1367011c.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/images/com.metainf.jira.plugin.emailissue/046ce34e-029b-4fa8-b89e-d63fe67fa7a3_scaled_scaled.png",
               "rel": "binary",
               "type": "image/png"
             },
             {
-              "href": "https://marketplace-cdn.atlassian.com/files/images/a0e08ad4-eaac-495b-b872-a2b144206901.png",
+              "href": "https://marketplace-cdn.atlassian.com/files/images/com.metainf.jira.plugin.emailissue/046ce34e-029b-4fa8-b89e-d63fe67fa7a3_scaled_high.png",
               "rel": "high-res",
               "type": "image/png"
             }
@@ -3149,10 +2109,10 @@
           "height": 16
         }
       },
-      "lastReleasedDate": "2016-05-05T04:35:12.692Z",
+      "lastReleasedDate": "2016-04-13T00:00:00.000Z",
       "version": {
         "supportType": "Vendor",
-        "releaseDate": "2016-05-05T04:35:12.692Z",
+        "releaseDate": "2016-04-13T00:00:00.000Z",
         "deployment": {
           "permissions": [],
           "remote": false,
@@ -3172,8 +2132,8 @@
               "buildNumber": 70107
             },
             "max": {
-              "version": "7.1.6",
-              "buildNumber": 71010
+              "version": "7.1.7",
+              "buildNumber": 71011
             },
             "cloud": false
           }
@@ -3184,44 +2144,40 @@
           "id": "commercial",
           "name": "Commercial"
         },
-        "version": "3.2.1.32102629",
+        "version": "7.0.16",
         "links": [
           {
-            "href": "https://marketplace.atlassian.com/plugins/com.thed.zephyr.je/reviews",
+            "href": "https://marketplace.atlassian.com/plugins/com.metainf.jira.plugin.emailissue/reviews",
             "rel": "reviews",
             "type": "text/html"
           },
           {
-            "href": "/rest/1.0/plugins/com.thed.zephyr.je/build-number/32102629",
+            "href": "/rest/1.0/plugins/com.metainf.jira.plugin.emailissue/build-number/1388",
             "rel": "self"
           },
           {
-            "href": "/plugins/com.thed.zephyr.je/versions#b32102629",
+            "href": "/plugins/com.metainf.jira.plugin.emailissue/versions#b1388",
             "rel": "alternate"
           },
           {
-            "href": "https://marketplace.atlassian.com/plugins/com.thed.zephyr.je/support",
+            "href": "https://marketplace.atlassian.com/plugins/com.metainf.jira.plugin.emailissue/support",
             "rel": "support"
           },
           {
-            "href": "https://marketplace.atlassian.com/plugins/com.thed.zephyr.je/versions",
+            "href": "https://marketplace.atlassian.com/plugins/com.metainf.jira.plugin.emailissue/versions",
             "rel": "version-history"
           },
           {
-            "href": "http://www.getzephyr.com/buy/zephyr_for_jira_eula.php",
-            "rel": "eula"
-          },
-          {
-            "href": "https://zephyrdocs.atlassian.net/wiki/display/ALLDOCS/Zephyr%20Documentation",
+            "href": "http://www.meta-inf.hu/wiki/display/PLUG/Documentation",
             "rel": "documentation"
           },
           {
-            "href": "https://marketplace.atlassian.com/download/plugins/com.thed.zephyr.je/version/32102629",
+            "href": "https://marketplace.atlassian.com/download/plugins/com.metainf.jira.plugin.emailissue/version/1388",
             "rel": "binary"
           }
         ],
         "status": "Public",
-        "releaseNotes": "<p>  Bug fixes </p>",
+        "releaseNotes": "<ul>  <li>[<a href=\"https://metainf.atlassian.net/browse/JETI-1094\" style=\"\">JETI-1094</a>] - My Internal comments are send to me  <li>[<a href=\"https://metainf.atlassian.net/browse/JETI-1136\">JETI-1136</a>] - Whitespace support in emails addresses fields  <li>[<a href=\"https://metainf.atlassian.net/browse/JETI-1142\">JETI-1142</a>] - 500 error when attempting to Email This Issue from Issue View Screen  <li>[<a href=\"https://metainf.atlassian.net/browse/JETI-1152\">JETI-1152</a>] - JQL ignored when adding Email This Issue as a post-function  <li>[<a href=\"https://metainf.atlassian.net/browse/JETI-1126\">JETI-1126</a>] - Assignee not set after component set by JETI  <li>[<a href=\"https://metainf.atlassian.net/browse/JETI-1159\">JETI-1159</a>] - Email This Plugin module breaks JIRA native attachment link functionality. </ul>",
         "marketplaceAgreementAccepted": true,
         "pluginSystemVersion": "Two",
         "instructions": [],
@@ -3234,7 +2190,7 @@
             },
             "name": "JIRA",
             "introduction": "Nice one! Your team went JIRA. You've got a best-in-class issue tracker, but that's only the beginning. The Marketplace is brimming with apps for time-tracking, agile project management, test management, and integration with your other systems. Add-ons are ready to help make JIRA the best project tracker you've ever used.",
-            "pluginCount": 2641,
+            "pluginCount": 2645,
             "key": "jira",
             "links": [
               {
@@ -3274,65 +2230,61 @@
           }
         ],
         "stable": true,
-        "buildNumber": 32102629,
-        "summary": "Bug fixes",
+        "buildNumber": 1388,
+        "summary": "Bugfixes and improvements",
         "addOnType": "Plugins 2"
       },
       "links": [
         {
-          "href": "/rest/1.0/plugins/com.thed.zephyr.je",
+          "href": "/rest/1.0/plugins/com.metainf.jira.plugin.emailissue",
           "rel": "self"
         },
         {
-          "href": "/plugins/com.thed.zephyr.je/overview",
+          "href": "/plugins/com.metainf.jira.plugin.emailissue/overview",
           "rel": "alternate"
         },
         {
-          "href": "/plugins/com.thed.zephyr.je/history",
+          "href": "/plugins/com.metainf.jira.plugin.emailissue/history",
           "rel": "history"
         },
         {
-          "href": "/rest/1.0/plugins/com.thed.zephyr.je/reviews",
+          "href": "/rest/1.0/plugins/com.metainf.jira.plugin.emailissue/reviews",
           "rel": "reviews",
           "type": "application/json"
         },
         {
-          "href": "/plugins/com.thed.zephyr.je/versions",
+          "href": "/plugins/com.metainf.jira.plugin.emailissue/versions",
           "rel": "versions"
         },
         {
-          "href": "https://marketplace.atlassian.com/plugins/com.thed.zephyr.je/reviews",
+          "href": "https://marketplace.atlassian.com/plugins/com.metainf.jira.plugin.emailissue/reviews",
           "rel": "reviews",
           "type": "text/html"
-        },
-        {
-          "href": "http://www.getzephyr.com/content/zephyr-for-jira-data-security",
-          "rel": "privacy"
         }
       ],
       "reviewSummary": {
         "links": [
           {
-            "href": "/rest/1.0/plugins/com.thed.zephyr.je/reviews",
+            "href": "/rest/1.0/plugins/com.metainf.jira.plugin.emailissue/reviews",
             "rel": "self"
           },
           {
-            "href": "/plugins/com.thed.zephyr.je/reviews",
+            "href": "/plugins/com.metainf.jira.plugin.emailissue/reviews",
             "rel": "alternate"
           }
         ],
-        "averageStars": 3.061797857284546,
-        "count": 178
+        "averageStars": 3.695122003555298,
+        "count": 82
       },
       "approval": {
         "status": "Public"
       },
-      "pluginKey": "com.thed.zephyr.je",
+      "pluginKey": "com.metainf.jira.plugin.emailissue",
       "isOldVersion": false,
       "activeInstalls": {
-        "downloadCount": 61127,
-        "totalInstalls": 7264,
-        "totalUsers": 1987343,
+        "downloadCount": 61947,
+        "totalInstalls": 3070,
+        "totalUsers": 3089354,
         "bundled": false,
         "bundledOnDemand": false
       },
@@ -3341,15 +2293,15 @@
         {
           "links": [
             {
-              "href": "/rest/1.0/plugins?category=Testing+%26+QA",
+              "href": "/rest/1.0/plugins?category=IT+%26+helpdesk",
               "rel": "self"
             },
             {
-              "href": "/plugins?category=Testing+%26+QA",
+              "href": "/plugins?category=IT+%26+helpdesk",
               "rel": "alternate"
             }
           ],
-          "name": "Testing & QA"
+          "name": "IT & helpdesk"
         },
         {
           "links": [
@@ -3363,39 +2315,26 @@
             }
           ],
           "name": "Custom fields"
-        },
-        {
-          "links": [
-            {
-              "href": "/rest/1.0/plugins?category=Dashboard+gadgets",
-              "rel": "self"
-            },
-            {
-              "href": "/plugins?category=Dashboard+gadgets",
-              "rel": "alternate"
-            }
-          ],
-          "name": "Dashboard gadgets"
         }
       ],
       "vendor": {
-        "name": "Zephyr",
-        "email": "salesorders@getzephyr.com",
+        "name": "META-INF KFT",
+        "email": "tibor.hegyi@meta-inf.hu",
         "links": [
           {
-            "href": "/rest/1.0/vendors/17834",
+            "href": "/rest/1.0/vendors/4907",
             "rel": "self"
           },
           {
-            "href": "/vendors/17834",
+            "href": "/vendors/4907",
             "rel": "alternate"
           },
           {
-            "href": "http://www.getzephyr.com",
+            "href": "http://www.meta-inf.hu",
             "rel": "homepage"
           }
         ],
-        "id": 17834,
+        "id": 4907,
         "verified": true
       },
       "compatibleApplications": [
@@ -3406,7 +2345,7 @@
           },
           "name": "JIRA",
           "introduction": "Nice one! Your team went JIRA. You've got a best-in-class issue tracker, but that's only the beginning. The Marketplace is brimming with apps for time-tracking, agile project management, test management, and integration with your other systems. Add-ons are ready to help make JIRA the best project tracker you've ever used.",
-          "pluginCount": 2641,
+          "pluginCount": 2645,
           "key": "jira",
           "links": [
             {
@@ -3445,7 +2384,1042 @@
           }
         }
       ],
-      "summary": "All your testing, inside JIRA. Finally! \r\n\r\nZephyr for JIRA is an add-on\r\nbuilt for JIRA Server, DC and Cloud. It augments JIRA's\r\ncapabilities, providing cost-effective, highly sophisticated test\r\nmanagement right inside your JIRA instance."
+      "summary": "Email collaboration made easy - send and receive emails with support for external users\r\n\r\nSend issues in emails to JIRA or non-JIRA recipients.  Custom templates, event notifications and more. Receive emails with amazing features JIRA does not have."
+    },
+    {
+      "downloadCount": 27621,
+      "name": "Table Filter and Charts for Confluence",
+      "deployment": {
+        "onDemand": true,
+        "onPremise": true
+      },
+      "lastModified": {
+        "by": "Maxim Kuzmich [StiltSoft]",
+        "date": "2016-05-20T10:34:01.969Z"
+      },
+      "dataCenterCompatible": true,
+      "icons": {
+        "default": {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/logo",
+              "rel": "self"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/bf745a4b-ddd4-4150-8fe2-043bf000855e.png",
+              "rel": "binary",
+              "type": "image/png"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/8954ad43-319f-49d2-b610-36f975db6b7f.png",
+              "rel": "high-res",
+              "type": "image/png"
+            }
+          ],
+          "width": 72,
+          "height": 72
+        },
+        "tiny": {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/icon",
+              "rel": "self"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/1f15e8af-eeb5-4b24-928a-8eb64fc9c4cd.png",
+              "rel": "binary",
+              "type": "image/png"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/efc59a5d-5c7f-41d8-9d37-f55381160213.png",
+              "rel": "high-res",
+              "type": "image/png"
+            }
+          ],
+          "width": 16,
+          "height": 16
+        }
+      },
+      "lastReleasedDate": "2016-05-20T10:33:08.460Z",
+      "version": {
+        "supportType": "Vendor",
+        "releaseDate": "2016-05-20T10:33:08.460Z",
+        "deployment": {
+          "permissions": [],
+          "remote": false,
+          "descriptorType": "xml",
+          "dataCenterCompatible": true
+        },
+        "deployable": true,
+        "marketplaceType": {
+          "type": "Paid via Atlassian",
+          "toolTip": "Evaluate and purchase this add-on through your MyAtlassian account."
+        },
+        "compatibilities": [
+          {
+            "applicationName": "Confluence",
+            "min": {
+              "version": "4.3",
+              "buildNumber": 3388
+            },
+            "max": {
+              "version": "5.9.11",
+              "buildNumber": 6219
+            },
+            "cloud": false
+          }
+        ],
+        "screenshots": [],
+        "license": {
+          "links": [],
+          "id": "commercial",
+          "name": "Commercial"
+        },
+        "version": "3.6.3",
+        "links": [
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/reviews",
+            "rel": "reviews",
+            "type": "text/html"
+          },
+          {
+            "href": "/rest/1.0/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/build-number/1000370",
+            "rel": "self"
+          },
+          {
+            "href": "/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/versions#b1000370",
+            "rel": "alternate"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/support",
+            "rel": "support"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/versions",
+            "rel": "version-history"
+          },
+          {
+            "href": "http://docs.stiltsoft.com/display/TableFilter/Table%20Filter%20for%20Confluence",
+            "rel": "documentation"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/download/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/version/1000370",
+            "rel": "binary"
+          }
+        ],
+        "status": "Public",
+        "releaseNotes": "<p>  Fixed in this release: </p> <ul>  <li>Resolved the issue with filtration  of date stamps on pages when filtration is performed by users having  different locales on their machines.  <li>Resolved the issue with the non-working default values for the icon filter.  <li>Resolved  the issue with the hiding of a newly added table row in the filtered  table after inserting @-mention, link or inserting any text snippet into  this row.  <li>Resolved the issue with the incorrect selection of  the table and table cell merging if the table with merged cells is  inserted within the Table Filter macro. </ul>",
+        "marketplaceAgreementAccepted": true,
+        "pluginSystemVersion": "Two",
+        "instructions": [],
+        "autoUpdateAllowed": false,
+        "compatibleApplications": [
+          {
+            "hostingSupport": {
+              "cloud": true,
+              "server": true
+            },
+            "name": "Confluence",
+            "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
+            "pluginCount": 1102,
+            "key": "confluence",
+            "links": [
+              {
+                "href": "/rest/1.0/applications/confluence",
+                "rel": "self"
+              },
+              {
+                "href": "/rest/1.0/applications/confluence/latest",
+                "rel": "latest-version"
+              },
+              {
+                "href": "/plugins/app/confluence",
+                "rel": "alternate"
+              },
+              {
+                "href": "/plugins/app/confluence/featured",
+                "rel": "featured-plugins"
+              },
+              {
+                "href": "/plugins/app/confluence/popular",
+                "rel": "most-popular-plugins"
+              },
+              {
+                "href": "/plugins/app/confluence/featured?hosting=cloud",
+                "rel": "ondemand-plugins"
+              }
+            ],
+            "atlassianConnectSupport": {
+              "cloud": true,
+              "server": false
+            },
+            "order": 3,
+            "status": {
+              "key": "Published",
+              "value": "Published"
+            }
+          }
+        ],
+        "stable": true,
+        "buildNumber": 1000370,
+        "summary": "Resolved issues with data filtration and default values",
+        "addOnType": "Plugins 2"
+      },
+      "links": [
+        {
+          "href": "/rest/1.0/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter",
+          "rel": "self"
+        },
+        {
+          "href": "/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/overview",
+          "rel": "alternate"
+        },
+        {
+          "href": "/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/history",
+          "rel": "history"
+        },
+        {
+          "href": "/rest/1.0/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/reviews",
+          "rel": "reviews",
+          "type": "application/json"
+        },
+        {
+          "href": "/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/versions",
+          "rel": "versions"
+        },
+        {
+          "href": "https://marketplace.atlassian.com/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/reviews",
+          "rel": "reviews",
+          "type": "text/html"
+        },
+        {
+          "href": "https://docs.stiltsoft.com/display/TableFilter/Privacy%20Policy",
+          "rel": "privacy"
+        }
+      ],
+      "reviewSummary": {
+        "links": [
+          {
+            "href": "/rest/1.0/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/reviews",
+            "rel": "self"
+          },
+          {
+            "href": "/plugins/com.stiltsoft.confluence.plugin.tablefilter.tablefilter/reviews",
+            "rel": "alternate"
+          }
+        ],
+        "averageStars": 3.615384578704834,
+        "count": 52
+      },
+      "approval": {
+        "status": "Public"
+      },
+      "pluginKey": "com.stiltsoft.confluence.plugin.tablefilter.tablefilter",
+      "isOldVersion": false,
+      "activeInstalls": {
+        "downloadCount": 27621,
+        "totalInstalls": 3188,
+        "totalUsers": 4030624,
+        "bundled": false,
+        "bundledOnDemand": false
+      },
+      "isNewPlugin": false,
+      "categories": [
+        {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins?category=Reports+%26+charts",
+              "rel": "self"
+            },
+            {
+              "href": "/plugins?category=Reports+%26+charts",
+              "rel": "alternate"
+            }
+          ],
+          "name": "Reports & charts"
+        },
+        {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins?category=Macros",
+              "rel": "self"
+            },
+            {
+              "href": "/plugins?category=Macros",
+              "rel": "alternate"
+            }
+          ],
+          "name": "Macros"
+        }
+      ],
+      "vendor": {
+        "name": "StiltSoft",
+        "email": "mkuzmich@stiltsoft.com",
+        "links": [
+          {
+            "href": "/rest/1.0/vendors/27437",
+            "rel": "self"
+          },
+          {
+            "href": "/vendors/27437",
+            "rel": "alternate"
+          },
+          {
+            "href": "http://stiltsoft.com",
+            "rel": "homepage"
+          }
+        ],
+        "id": 27437,
+        "verified": true
+      },
+      "compatibleApplications": [
+        {
+          "hostingSupport": {
+            "cloud": true,
+            "server": true
+          },
+          "name": "Confluence",
+          "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
+          "pluginCount": 1102,
+          "key": "confluence",
+          "links": [
+            {
+              "href": "/rest/1.0/applications/confluence",
+              "rel": "self"
+            },
+            {
+              "href": "/rest/1.0/applications/confluence/latest",
+              "rel": "latest-version"
+            },
+            {
+              "href": "/plugins/app/confluence",
+              "rel": "alternate"
+            },
+            {
+              "href": "/plugins/app/confluence/featured",
+              "rel": "featured-plugins"
+            },
+            {
+              "href": "/plugins/app/confluence/popular",
+              "rel": "most-popular-plugins"
+            },
+            {
+              "href": "/plugins/app/confluence/featured?hosting=cloud",
+              "rel": "ondemand-plugins"
+            }
+          ],
+          "atlassianConnectSupport": {
+            "cloud": true,
+            "server": false
+          },
+          "order": 3,
+          "status": {
+            "key": "Published",
+            "value": "Published"
+          }
+        }
+      ],
+      "summary": "Dynamically filter one or multiple tables with the variety of filters, create pivot tables from source data or generate reporting charts with the dynamic update upon change or data filtration."
+    },
+    {
+      "downloadCount": 56661,
+      "name": "Refined Theme for Confluence",
+      "deployment": {
+        "onDemand": false,
+        "onPremise": true
+      },
+      "lastModified": {
+        "by": "Emil Sjödin [RefinedWiki]",
+        "date": "2016-05-18T06:34:26.191Z"
+      },
+      "dataCenterCompatible": true,
+      "icons": {
+        "default": {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins/com.refinedwiki.confluence.plugins.theme.original/logo",
+              "rel": "self"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/1430614d-b7c2-47c2-a205-00cf9b027589.png",
+              "rel": "binary",
+              "type": "image/png"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/460f46cd-8adb-4332-9f91-f30e51a3f3eb.png",
+              "rel": "high-res",
+              "type": "image/png"
+            }
+          ],
+          "width": 72,
+          "height": 72
+        },
+        "tiny": {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins/com.refinedwiki.confluence.plugins.theme.original/icon",
+              "rel": "self"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/3057e940-5431-4918-a10f-191a9e8c48aa.png",
+              "rel": "binary",
+              "type": "image/png"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/4236544a-db64-4445-95d3-2bceea1f6d54.png",
+              "rel": "high-res",
+              "type": "image/png"
+            }
+          ],
+          "width": 16,
+          "height": 16
+        }
+      },
+      "lastReleasedDate": "2016-05-13T00:00:00.000Z",
+      "version": {
+        "supportType": "Vendor",
+        "releaseDate": "2016-05-13T00:00:00.000Z",
+        "deployment": {
+          "permissions": [],
+          "remote": false,
+          "descriptorType": "xml",
+          "dataCenterCompatible": true
+        },
+        "deployable": true,
+        "marketplaceType": {
+          "type": "Paid via Atlassian",
+          "toolTip": "Evaluate and purchase this add-on through your MyAtlassian account."
+        },
+        "compatibilities": [
+          {
+            "applicationName": "Confluence",
+            "min": {
+              "version": "5.6",
+              "buildNumber": 5634
+            },
+            "max": {
+              "version": "5.9.11",
+              "buildNumber": 6219
+            },
+            "cloud": false
+          }
+        ],
+        "screenshots": [],
+        "license": {
+          "links": [],
+          "id": "commercial",
+          "name": "Commercial"
+        },
+        "version": "5.0.4",
+        "links": [
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.refinedwiki.confluence.plugins.theme.original/reviews",
+            "rel": "reviews",
+            "type": "text/html"
+          },
+          {
+            "href": "/rest/1.0/plugins/com.refinedwiki.confluence.plugins.theme.original/build-number/1863",
+            "rel": "self"
+          },
+          {
+            "href": "/plugins/com.refinedwiki.confluence.plugins.theme.original/versions#b1863",
+            "rel": "alternate"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.refinedwiki.confluence.plugins.theme.original/support",
+            "rel": "support"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.refinedwiki.confluence.plugins.theme.original/versions",
+            "rel": "version-history"
+          },
+          {
+            "href": "http://refinedwiki.com/en/display/products/orignal-theme-confluence.aspx",
+            "rel": "learn-more"
+          },
+          {
+            "href": "http://docs.refinedwiki.com/display/rwot",
+            "rel": "documentation"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/download/plugins/com.refinedwiki.confluence.plugins.theme.original/version/1863",
+            "rel": "binary"
+          }
+        ],
+        "status": "Public",
+        "releaseNotes": "<p>    For more information, please read the <a href=\"https://docs.refinedwiki.com/x/BoGmAg\">release notes</a>. </p>",
+        "marketplaceAgreementAccepted": true,
+        "pluginSystemVersion": "Two",
+        "instructions": [],
+        "autoUpdateAllowed": false,
+        "compatibleApplications": [
+          {
+            "hostingSupport": {
+              "cloud": true,
+              "server": true
+            },
+            "name": "Confluence",
+            "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
+            "pluginCount": 1102,
+            "key": "confluence",
+            "links": [
+              {
+                "href": "/rest/1.0/applications/confluence",
+                "rel": "self"
+              },
+              {
+                "href": "/rest/1.0/applications/confluence/latest",
+                "rel": "latest-version"
+              },
+              {
+                "href": "/plugins/app/confluence",
+                "rel": "alternate"
+              },
+              {
+                "href": "/plugins/app/confluence/featured",
+                "rel": "featured-plugins"
+              },
+              {
+                "href": "/plugins/app/confluence/popular",
+                "rel": "most-popular-plugins"
+              },
+              {
+                "href": "/plugins/app/confluence/featured?hosting=cloud",
+                "rel": "ondemand-plugins"
+              }
+            ],
+            "atlassianConnectSupport": {
+              "cloud": true,
+              "server": false
+            },
+            "order": 3,
+            "status": {
+              "key": "Published",
+              "value": "Published"
+            }
+          }
+        ],
+        "stable": true,
+        "buildNumber": 1863,
+        "summary": "Minor bug fixes",
+        "addOnType": "Plugins 2"
+      },
+      "links": [
+        {
+          "href": "/rest/1.0/plugins/com.refinedwiki.confluence.plugins.theme.original",
+          "rel": "self"
+        },
+        {
+          "href": "/plugins/com.refinedwiki.confluence.plugins.theme.original/overview",
+          "rel": "alternate"
+        },
+        {
+          "href": "/plugins/com.refinedwiki.confluence.plugins.theme.original/history",
+          "rel": "history"
+        },
+        {
+          "href": "/rest/1.0/plugins/com.refinedwiki.confluence.plugins.theme.original/reviews",
+          "rel": "reviews",
+          "type": "application/json"
+        },
+        {
+          "href": "/plugins/com.refinedwiki.confluence.plugins.theme.original/versions",
+          "rel": "versions"
+        },
+        {
+          "href": "https://marketplace.atlassian.com/plugins/com.refinedwiki.confluence.plugins.theme.original/reviews",
+          "rel": "reviews",
+          "type": "text/html"
+        }
+      ],
+      "reviewSummary": {
+        "links": [
+          {
+            "href": "/rest/1.0/plugins/com.refinedwiki.confluence.plugins.theme.original/reviews",
+            "rel": "self"
+          },
+          {
+            "href": "/plugins/com.refinedwiki.confluence.plugins.theme.original/reviews",
+            "rel": "alternate"
+          }
+        ],
+        "averageStars": 3.8372092247009277,
+        "count": 43
+      },
+      "approval": {
+        "status": "Public"
+      },
+      "pluginKey": "com.refinedwiki.confluence.plugins.theme.original",
+      "isOldVersion": false,
+      "activeInstalls": {
+        "downloadCount": 56661,
+        "totalInstalls": 2768,
+        "totalUsers": 1873017,
+        "bundled": false,
+        "bundledOnDemand": false
+      },
+      "isNewPlugin": false,
+      "categories": [
+        {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins?category=Documentation",
+              "rel": "self"
+            },
+            {
+              "href": "/plugins?category=Documentation",
+              "rel": "alternate"
+            }
+          ],
+          "name": "Documentation"
+        },
+        {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins?category=Blueprints",
+              "rel": "self"
+            },
+            {
+              "href": "/plugins?category=Blueprints",
+              "rel": "alternate"
+            }
+          ],
+          "name": "Blueprints"
+        },
+        {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins?category=Macros",
+              "rel": "self"
+            },
+            {
+              "href": "/plugins?category=Macros",
+              "rel": "alternate"
+            }
+          ],
+          "name": "Macros"
+        },
+        {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins?category=Themes+%26+styles",
+              "rel": "self"
+            },
+            {
+              "href": "/plugins?category=Themes+%26+styles",
+              "rel": "alternate"
+            }
+          ],
+          "name": "Themes & styles"
+        }
+      ],
+      "vendor": {
+        "name": "RefinedWiki",
+        "email": "emil@refinedwiki.com",
+        "links": [
+          {
+            "href": "/rest/1.0/vendors/15228",
+            "rel": "self"
+          },
+          {
+            "href": "/vendors/15228",
+            "rel": "alternate"
+          },
+          {
+            "href": "http://www.refinedwiki.com",
+            "rel": "homepage"
+          }
+        ],
+        "id": 15228,
+        "verified": true
+      },
+      "compatibleApplications": [
+        {
+          "hostingSupport": {
+            "cloud": true,
+            "server": true
+          },
+          "name": "Confluence",
+          "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
+          "pluginCount": 1102,
+          "key": "confluence",
+          "links": [
+            {
+              "href": "/rest/1.0/applications/confluence",
+              "rel": "self"
+            },
+            {
+              "href": "/rest/1.0/applications/confluence/latest",
+              "rel": "latest-version"
+            },
+            {
+              "href": "/plugins/app/confluence",
+              "rel": "alternate"
+            },
+            {
+              "href": "/plugins/app/confluence/featured",
+              "rel": "featured-plugins"
+            },
+            {
+              "href": "/plugins/app/confluence/popular",
+              "rel": "most-popular-plugins"
+            },
+            {
+              "href": "/plugins/app/confluence/featured?hosting=cloud",
+              "rel": "ondemand-plugins"
+            }
+          ],
+          "atlassianConnectSupport": {
+            "cloud": true,
+            "server": false
+          },
+          "order": 3,
+          "status": {
+            "key": "Published",
+            "value": "Published"
+          }
+        }
+      ],
+      "summary": "RefinedTheme for Confluence is the perfect add-on to design and skin Confluence, increase the adoption rate, make it user friendly to non-technical users, structure content, customize dashboards, design blogs or to turn your wiki into an Intranet."
+    },
+    {
+      "downloadCount": 27513,
+      "name": "Graphviz Diagrams for Confluence",
+      "deployment": {
+        "onDemand": false,
+        "onPremise": true
+      },
+      "lastModified": {
+        "by": "Bob Swift [Bob Swift Atlassian Add-ons]",
+        "date": "2015-11-24T14:27:20.556Z"
+      },
+      "dataCenterCompatible": true,
+      "icons": {
+        "default": {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins/com.atlassian.confluence.extra.graphviz/logo",
+              "rel": "self"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/1a1e93ab-b417-4759-b6fa-11aa2828dc17.png",
+              "rel": "binary",
+              "type": "image/png"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/6b1f0f3f-8190-4cc1-ab4d-d16074ae865d.png",
+              "rel": "high-res",
+              "type": "image/png"
+            }
+          ],
+          "width": 72,
+          "height": 72
+        },
+        "tiny": {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins/com.atlassian.confluence.extra.graphviz/icon",
+              "rel": "self"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/c0164d85-55ad-4165-979b-648ba1e893d9.png",
+              "rel": "binary",
+              "type": "image/png"
+            },
+            {
+              "href": "https://marketplace-cdn.atlassian.com/files/images/80b5b9b7-e171-4260-8ea1-3d863aa354ac.png",
+              "rel": "high-res",
+              "type": "image/png"
+            }
+          ],
+          "width": 16,
+          "height": 16
+        }
+      },
+      "lastReleasedDate": "2015-10-24T00:00:00.000Z",
+      "version": {
+        "supportType": "Vendor",
+        "releaseDate": "2015-10-24T00:00:00.000Z",
+        "deployment": {
+          "permissions": [],
+          "remote": false,
+          "descriptorType": "xml",
+          "dataCenterCompatible": true
+        },
+        "deployable": true,
+        "marketplaceType": {
+          "type": "Paid via Atlassian",
+          "toolTip": "Evaluate and purchase this add-on through your MyAtlassian account."
+        },
+        "compatibilities": [
+          {
+            "applicationName": "Confluence",
+            "min": {
+              "version": "5.5",
+              "buildNumber": 5501
+            },
+            "max": {
+              "version": "5.9.11",
+              "buildNumber": 6219
+            },
+            "cloud": false
+          }
+        ],
+        "screenshots": [],
+        "license": {
+          "links": [],
+          "id": "commercial",
+          "name": "Commercial"
+        },
+        "version": "3.0.0",
+        "links": [
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.atlassian.confluence.extra.graphviz/reviews",
+            "rel": "reviews",
+            "type": "text/html"
+          },
+          {
+            "href": "/rest/1.0/plugins/com.atlassian.confluence.extra.graphviz/build-number/300",
+            "rel": "self"
+          },
+          {
+            "href": "/plugins/com.atlassian.confluence.extra.graphviz/versions#b300",
+            "rel": "alternate"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.atlassian.confluence.extra.graphviz/support",
+            "rel": "support"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/plugins/com.atlassian.confluence.extra.graphviz/versions",
+            "rel": "version-history"
+          },
+          {
+            "href": "https://bobswift.atlassian.net/wiki/x/WoDXBQ",
+            "rel": "eula"
+          },
+          {
+            "href": "https://bobswift.atlassian.net/wiki/display/GVIZ",
+            "rel": "documentation"
+          },
+          {
+            "href": "https://marketplace.atlassian.com/download/plugins/com.atlassian.confluence.extra.graphviz/version/300",
+            "rel": "binary"
+          }
+        ],
+        "status": "Public",
+        "releaseNotes": "<p>  <a href=\"https://bobswift.atlassian.net/wiki/display/GVIZ/Release+Notes+3.0\" style=\"\">Release Notes 3.0</a> </p>",
+        "marketplaceAgreementAccepted": true,
+        "pluginSystemVersion": "Two",
+        "instructions": [],
+        "autoUpdateAllowed": false,
+        "compatibleApplications": [
+          {
+            "hostingSupport": {
+              "cloud": true,
+              "server": true
+            },
+            "name": "Confluence",
+            "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
+            "pluginCount": 1102,
+            "key": "confluence",
+            "links": [
+              {
+                "href": "/rest/1.0/applications/confluence",
+                "rel": "self"
+              },
+              {
+                "href": "/rest/1.0/applications/confluence/latest",
+                "rel": "latest-version"
+              },
+              {
+                "href": "/plugins/app/confluence",
+                "rel": "alternate"
+              },
+              {
+                "href": "/plugins/app/confluence/featured",
+                "rel": "featured-plugins"
+              },
+              {
+                "href": "/plugins/app/confluence/popular",
+                "rel": "most-popular-plugins"
+              },
+              {
+                "href": "/plugins/app/confluence/featured?hosting=cloud",
+                "rel": "ondemand-plugins"
+              }
+            ],
+            "atlassianConnectSupport": {
+              "cloud": true,
+              "server": false
+            },
+            "order": 3,
+            "status": {
+              "key": "Published",
+              "value": "Published"
+            }
+          }
+        ],
+        "stable": true,
+        "buildNumber": 300,
+        "summary": "Confluence 5.9 support, remove RB dependencies",
+        "addOnType": "Plugins 2"
+      },
+      "links": [
+        {
+          "href": "/rest/1.0/plugins/com.atlassian.confluence.extra.graphviz",
+          "rel": "self"
+        },
+        {
+          "href": "/plugins/com.atlassian.confluence.extra.graphviz/overview",
+          "rel": "alternate"
+        },
+        {
+          "href": "/plugins/com.atlassian.confluence.extra.graphviz/history",
+          "rel": "history"
+        },
+        {
+          "href": "/rest/1.0/plugins/com.atlassian.confluence.extra.graphviz/reviews",
+          "rel": "reviews",
+          "type": "application/json"
+        },
+        {
+          "href": "/plugins/com.atlassian.confluence.extra.graphviz/versions",
+          "rel": "versions"
+        },
+        {
+          "href": "https://marketplace.atlassian.com/plugins/com.atlassian.confluence.extra.graphviz/reviews",
+          "rel": "reviews",
+          "type": "text/html"
+        },
+        {
+          "href": "https://bobswift.atlassian.net/wiki/display/info/Bob%20Swift%20Atlassian%20Add-ons%20EULA#BobSwiftAtlassianAdd-onsEULA-data_security_and_privacy",
+          "rel": "privacy"
+        }
+      ],
+      "reviewSummary": {
+        "links": [
+          {
+            "href": "/rest/1.0/plugins/com.atlassian.confluence.extra.graphviz/reviews",
+            "rel": "self"
+          },
+          {
+            "href": "/plugins/com.atlassian.confluence.extra.graphviz/reviews",
+            "rel": "alternate"
+          }
+        ],
+        "averageStars": 3.5714285373687744,
+        "count": 7
+      },
+      "approval": {
+        "status": "Public"
+      },
+      "pluginKey": "com.atlassian.confluence.extra.graphviz",
+      "isOldVersion": false,
+      "activeInstalls": {
+        "downloadCount": 27513,
+        "totalInstalls": 1037,
+        "totalUsers": 1604161,
+        "bundled": false,
+        "bundledOnDemand": false
+      },
+      "isNewPlugin": false,
+      "categories": [
+        {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins?category=Reports+%26+charts",
+              "rel": "self"
+            },
+            {
+              "href": "/plugins?category=Reports+%26+charts",
+              "rel": "alternate"
+            }
+          ],
+          "name": "Reports & charts"
+        },
+        {
+          "links": [
+            {
+              "href": "/rest/1.0/plugins?category=Macros",
+              "rel": "self"
+            },
+            {
+              "href": "/plugins?category=Macros",
+              "rel": "alternate"
+            }
+          ],
+          "name": "Macros"
+        }
+      ],
+      "vendor": {
+        "name": "Bob Swift Atlassian Add-ons (an Appfire company)",
+        "email": "info@bobswiftsoftware.com",
+        "links": [
+          {
+            "href": "/rest/1.0/vendors/90",
+            "rel": "self"
+          },
+          {
+            "href": "/vendors/90",
+            "rel": "alternate"
+          },
+          {
+            "href": "http://bobswiftsoftware.com",
+            "rel": "homepage"
+          }
+        ],
+        "id": 90,
+        "verified": true
+      },
+      "compatibleApplications": [
+        {
+          "hostingSupport": {
+            "cloud": true,
+            "server": true
+          },
+          "name": "Confluence",
+          "introduction": "Confluence is the perfect tool for getting everyone on the same page. Create stunning visuals to explain your ideas, theme Confluence into a thing of beauty, or take advantage of powerful tools for technical writers. Whether your team is large or small, technical or Luddite, there's a Confluence add-on to get everyone in sync.",
+          "pluginCount": 1102,
+          "key": "confluence",
+          "links": [
+            {
+              "href": "/rest/1.0/applications/confluence",
+              "rel": "self"
+            },
+            {
+              "href": "/rest/1.0/applications/confluence/latest",
+              "rel": "latest-version"
+            },
+            {
+              "href": "/plugins/app/confluence",
+              "rel": "alternate"
+            },
+            {
+              "href": "/plugins/app/confluence/featured",
+              "rel": "featured-plugins"
+            },
+            {
+              "href": "/plugins/app/confluence/popular",
+              "rel": "most-popular-plugins"
+            },
+            {
+              "href": "/plugins/app/confluence/featured?hosting=cloud",
+              "rel": "ondemand-plugins"
+            }
+          ],
+          "atlassianConnectSupport": {
+            "cloud": true,
+            "server": false
+          },
+          "order": 3,
+          "status": {
+            "key": "Published",
+            "value": "Published"
+          }
+        }
+      ],
+      "summary": "Create dynamic flowcharts and diagrams in Confluence using simple, plain text expressions. Based on Graph Visualization Software (Graphviz) and the DOT language."
     }
   ]
 }

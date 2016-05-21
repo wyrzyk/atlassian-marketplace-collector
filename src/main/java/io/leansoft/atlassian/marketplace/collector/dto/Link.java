@@ -17,7 +17,7 @@ public final class Link {
     }
 
     @JsonCreator
-    public static Link createPlugins(@JsonProperty("href") String href,
+    public static Link createLink(@JsonProperty("href") String href,
                                      @JsonProperty("rel") String rel,
                                      @JsonProperty("type") String type) {
         return new Link(href, rel, type);
@@ -27,11 +27,11 @@ public final class Link {
         return href;
     }
 
-    public String getRel() {
+    String getRel() {
         return rel;
     }
 
-    public String getType() {
+    String getType() {
         return type;
     }
 }

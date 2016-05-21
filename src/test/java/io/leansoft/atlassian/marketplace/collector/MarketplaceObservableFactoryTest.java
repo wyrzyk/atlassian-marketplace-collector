@@ -12,7 +12,7 @@ import rx.observers.TestSubscriber;
 import java.io.IOException;
 import java.util.List;
 
-import static io.leansoft.atlassian.marketplace.collector.Functions.onlyOne;
+import static io.leansoft.atlassian.marketplace.collector.utils.Functions.onlyOne;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Matchers.anyString;
 import static org.mockito.Mockito.when;
@@ -27,12 +27,11 @@ public class MarketplaceObservableFactoryTest {
     public void before() throws Exception {
         MockitoAnnotations.initMocks(this);
         marketplaceObservableFactory = new MarketplaceObservableFactory(httpClient);
+        prepareStandardMarketplaceMock();
     }
 
     @Test
     public void testObservableShouldNotReturnErrors() throws Exception {
-        prepareMockForResponse(ResourcesUtil.getStandardResponse());
-
         final Observable<Plugins> observable = marketplaceObservableFactory.getObservable();
         final TestSubscriber<Plugins> testSubscriber = new TestSubscriber<>();
         observable.subscribe(testSubscriber);
@@ -41,23 +40,27 @@ public class MarketplaceObservableFactoryTest {
 
     @Test
     public void testObservableShouldHaveLinkToNextResource() throws Exception {
-        prepareMockForResponse(ResourcesUtil.getStandardResponse());
-
         final Observable<Plugins> observable = marketplaceObservableFactory.getObservable();
         final TestSubscriber<Plugins> testSubscriber = new TestSubscriber<>();
         observable.subscribe(testSubscriber);
         testSubscriber.assertNoErrors();
         final List<Plugins> onNextEvents = testSubscriber.getOnNextEvents();
-        final Plugins plugins = onNextEvents.stream()
-                .reduce(onlyOne())
+        final Plugins firstPlugin = onNextEvents.stream()
+                .findFirst()
                 .get();
-        assertThat(plugins.getNextLink()).isPresent();
+        assertThat(firstPlugin.getNextLink()).isPresent();
+        testSubscriber.assertValueCount(3);
+        final long pluginsCount = onNextEvents.stream().flatMap(plugins -> plugins.getPlugins().stream()).count();
+        assertThat(pluginsCount).isEqualTo(20);
     }
 
 
-    private void prepareMockForResponse(byte[] responseBody) throws IOException {
+    private void prepareStandardMarketplaceMock() throws IOException {
+        final byte[] firstResponse = ResourcesUtil.getFirstResponse();
+        final byte[] secondResponse = ResourcesUtil.getSecondResponse();
+        final byte[] lastResponse = ResourcesUtil.getLastResponse();
         final HttpClient.Response response = Mockito.mock(HttpClient.Response.class);
-        when(response.getBodyBytes()).thenReturn(responseBody);
+        when(response.getBodyBytes()).thenReturn(firstResponse, secondResponse, lastResponse);
         when(response.isSuccessful()).thenReturn(true);
         when(httpClient.get(anyString())).thenReturn(response);
     }

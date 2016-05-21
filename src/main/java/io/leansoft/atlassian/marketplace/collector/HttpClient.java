@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 @Component
-public class HttpClient {
+class HttpClient {
     private final OkHttpClient client = new OkHttpClient();
 
-    public Response get(String url) throws IOException {
+    Response get(String url) throws IOException {
         final Request request = new Request.Builder()
                 .url(url)
                 .build();
@@ -25,15 +25,15 @@ public class HttpClient {
             this.response = response;
         }
 
-        public boolean isSuccessful() {
+        boolean isSuccessful() {
             return response.isSuccessful();
         }
 
-        public byte[] getBodyBytes() throws IOException {
+        byte[] getBodyBytes() throws IOException {
             return response.body().bytes();
         }
 
-        public int statusCode() {
+        int statusCode() {
             return response.code();
         }
     }
