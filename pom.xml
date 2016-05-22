@@ -6,7 +6,7 @@
 
     <groupId>io.leansoft</groupId>
     <artifactId>atlassian-marketplace-collector</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <licenses>
         <license>
